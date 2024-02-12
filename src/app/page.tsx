@@ -109,7 +109,11 @@ export default function Home() {
           </p>
         </a>
       </div> */}
-      <Image className="max-w-xl" src={ImgPoster} alt="poster" />
+      <Image
+        className="max-w-xl w-full rounded-md"
+        src={ImgPoster}
+        alt="poster"
+      />
     </main>
   );
 }
