@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pb-20">
-      <div>
-        <section className="bg-primary-mustard w-full pb-20">
+      <div className="w-full">
+        <section className="pb-20 bg-primary-mustard">
           <div className="container mx-auto">
             <Image
               className="w-full h-auto md:w-1/2 sm:w-3/4 mx-auto"
@@ -16,7 +16,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="text-secondary-brown px-3">
+        <section className="text-secondary-brown px-3 max-w-2xl mx-auto">
           <div className="bg-white p-1 border border-secondary-yellow rounded-2xl mt-[-80px]">
             <h3 className="text-center">
               รวมสินค้าและบริการ เพื่อสุขภาพ
