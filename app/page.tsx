@@ -9,7 +9,7 @@ export default function Home() {
             <Image
               className="w-full h-auto md:w-1/2 sm:w-3/4 mx-auto"
               src="/header.webp"
-              alt="care corner promote"
+              alt="Care Corner promote"
               width={523}
               height={261}
               priority
