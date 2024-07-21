@@ -11,7 +11,7 @@ const inter = Prompt({
 });
 
 export const metadata: Metadata = {
-  title: "Care conner",
+  title: "Care corner",
   description: "มุมที่พร้อมดูแลคุณ ทุกช่วงวัย",
 };
 

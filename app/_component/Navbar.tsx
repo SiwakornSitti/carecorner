@@ -19,7 +19,7 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
           <div className="flex items-center">
             <Image
               src="/logo.webp"
-              alt="care-conner-logo"
+              alt="care-corner-logo"
               width={89}
               height={41}
             />
