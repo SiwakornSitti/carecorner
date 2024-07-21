@@ -18,16 +18,36 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+p,
+b {
+  font-size: 10px;
+  @media only screen and (min-width: 600px) {
+    font-size: 12px;
+  }
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: bold;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 14px;
   }
 }
