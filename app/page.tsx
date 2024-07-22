@@ -6,18 +6,41 @@ export default function Home() {
       <div className="w-full">
         <section className="pb-20 bg-primary-mustard">
           <div className="container mx-auto">
+            <div className="relative">
+              <Image
+                className="ml-auto"
+                src="/delivery-btn.webp"
+                alt="delivery button"
+                width={139}
+                height={30}
+              />
+              <Image
+                className="absolute top-4 right-2"
+                src="/motocycle.webp"
+                alt="motocycle"
+                width={49}
+                height={49}
+              />
+            </div>
+
             <Image
-              className="w-full h-auto md:w-1/2 sm:w-3/4 mx-auto"
-              src="/header.webp"
-              alt="Care Corner promote"
-              width={523}
-              height={261}
-              priority
+              className="mx-auto"
+              src="/banner.webp"
+              alt="Care Corner banner"
+              width={207}
+              height={119}
+            />
+            <Image
+              className="mx-auto"
+              src="/cover.webp"
+              alt="Care Corner cover"
+              width={260}
+              height={86}
             />
           </div>
         </section>
         <section className="text-secondary-brown px-3 max-w-2xl mx-auto">
-          <div className="bg-white p-1 border border-secondary-yellow rounded-2xl mt-[-80px]">
+          <div className="bg-white px-1 py-2 border border-secondary-yellow rounded-2xl mt-[-80px] shadow-md shadow-primary-mustard">
             <h3 className="text-center">
               รวมสินค้าและบริการ เพื่อสุขภาพ
               <br />
@@ -46,13 +69,15 @@ export default function Home() {
               </li>
               <li className="flex-1 p-1">
                 <Image
-                  src="/food.webp"
+                  src="/good-food.webp"
                   className="mx-auto h-20"
                   alt="catering"
                   width={75}
                   height={75}
                 />
-                <p>มีบริการจัดคอร์สอาหารเฉพาะบุคคลและ Catering</p>
+                <p>
+                  มีบริการจัดคอร์สอาหาร เฉพาะบุคคล โดยแพทย์ และนักกำหนดอาหาร
+                </p>
               </li>
               <li className="flex-1 p-1">
                 <Image
