@@ -1,124 +1,16 @@
 import Image from "next/image";
+import Footer from "@/app/_component/Footer";
+import Cover from "@/app/_component/Cover";
+import Service from "@/app/_component/Service";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pb-20">
       <div className="w-full">
-        <section className="pb-20 bg-primary-mustard">
-          <div className="container mx-auto">
-            <div className="relative">
-              <Image
-                className="ml-auto"
-                src="/delivery-btn.webp"
-                alt="delivery button"
-                width={139}
-                height={30}
-              />
-              <Image
-                className="absolute top-4 right-2"
-                src="/motocycle.webp"
-                alt="motocycle"
-                width={49}
-                height={49}
-              />
-            </div>
-
-            <Image
-              className="mx-auto"
-              src="/banner.webp"
-              alt="Care Corner banner"
-              width={207}
-              height={119}
-            />
-            <Image
-              className="mx-auto"
-              src="/cover.webp"
-              alt="Care Corner cover"
-              width={260}
-              height={86}
-            />
-          </div>
-        </section>
-        <section className="text-secondary-brown px-3 max-w-2xl mx-auto">
-          <div className="bg-white px-1 py-2 border border-secondary-yellow rounded-2xl mt-[-80px] shadow-md shadow-primary-mustard">
-            <h3 className="text-center">
-              รวมสินค้าและบริการ เพื่อสุขภาพ
-              <br />
-              ทั้งของกิน ของใช้ เพื่อคนรักสุขภาพ เด็ก ผู้สูงอายุ และผู้ป่วย
-            </h3>
-            <ul className="flex text-center">
-              <li className="flex-1 p-1">
-                <Image
-                  className="mx-auto h-20"
-                  src="/protect.webp"
-                  alt="trust and safety"
-                  width={75}
-                  height={75}
-                />
-                <p>มั่นใจ ปลอดภัย สินค้าแท้ 100%</p>
-              </li>
-              <li className="flex-1 p-1">
-                <Image
-                  className="mx-auto h-20"
-                  src="/delivery.webp"
-                  alt="fast delivery"
-                  width={75}
-                  height={75}
-                />
-                <p>ส่งเร็ว ส่งชัวร์ ทั่วประเทศ</p>
-              </li>
-              <li className="flex-1 p-1">
-                <Image
-                  src="/good-food.webp"
-                  className="mx-auto h-20"
-                  alt="catering"
-                  width={75}
-                  height={75}
-                />
-                <p>
-                  มีบริการจัดคอร์สอาหาร เฉพาะบุคคล โดยแพทย์ และนักกำหนดอาหาร
-                </p>
-              </li>
-              <li className="flex-1 p-1">
-                <Image
-                  src="/talking.webp"
-                  className="mx-auto h-20"
-                  alt="talking"
-                  width={75}
-                  height={75}
-                />
-                <p>พร้อมให้คำปรึกษาก่อนและหลังการขาย</p>
-              </li>
-            </ul>
-          </div>
-        </section>
+        <Cover />
+        <Service />
       </div>
-
-      <section className="bg-white w-full">
-        <div className="container mx-auto p-4">
-          <h3 className="text-primary-mustard">ติดต่อเรา</h3>
-          <b className="text-secondary-brown">
-            บริษัท แคร์ คอร์เนอร์ แอนด์ มอร์ จำกัด
-          </b>
-          <p className="text-secondary-brown">
-            600/712 หมู่ 14 ถ.พหลโยธิน ต.คูคต อ.ลำลูกกา จ.ปทุมธานี 12130
-          </p>
-          <div className="leading-none">
-            <b className="text-primary-mustard">เบอร์ติดต่อ</b>
-            <p className="inline text-secondary-brown"> 086-399-4229</p>
-          </div>
-          <div className="leading-none">
-            <b className="text-primary-mustard">อีเมล</b>
-            <p className="inline text-secondary-brown">
-              {" "}
-              info.carecornerandmore@gmail.com
-            </p>
-          </div>
-        </div>
-        <p className="text-center text-secondary-brown p-2">
-          Copyright @ 2024 Care Corner and More | All right reserved
-        </p>
-      </section>
+      <Footer />
     </main>
   );
 }
