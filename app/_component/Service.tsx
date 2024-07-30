@@ -3,13 +3,13 @@ import Image from "next/image";
 
 const Service: FC = () => {
   return (
-    <section className="text-secondary-brown px-3 max-w-2xl mx-auto">
+    <section className="text-secondary-brown px-3 max-w-2xl mx-auto ">
       <div className="bg-white px-1 py-2 border border-secondary-yellow rounded-2xl mt-[-80px] shadow-md shadow-primary-mustard">
-        <h3 className="text-center">
+        <h1 className="text-center text-sm">
           รวมสินค้าและบริการ เพื่อสุขภาพ
           <br />
           ทั้งของกิน ของใช้ เพื่อคนรักสุขภาพ เด็ก ผู้สูงอายุ และผู้ป่วย
-        </h3>
+        </h1>
         <ul className="flex text-center">
           <li className="flex-1 p-1">
             <Image

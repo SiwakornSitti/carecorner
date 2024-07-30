@@ -6,40 +6,38 @@ const menuLists = [
   {
     imgSrc: "/facebook.webp",
     label: "Facebook",
-    linkTo: "/",
+    linkTo: "https://facebook.com/carecornerandmore",
   },
   {
     imgSrc: "/line.webp",
     label: "LINE",
-    linkTo: "/",
+    linkTo: "https://lin.ee/FJ2bCMW",
   },
   {
     imgSrc: "/lazada.webp",
     label: "Lazada",
-    linkTo: "/",
+    linkTo: "https://lazada.co.th/carecornerandmore",
   },
   {
     imgSrc: "/shopee.webp",
     label: "Shopee",
-    linkTo: "/",
+    linkTo: "https://shopee.co.th/carecornerandmore",
   },
   {
     imgSrc: "/tiktok.webp",
     label: "Tiktok",
-    linkTo: "/",
+    linkTo: "https://tiktok.com/@carecornerandmore",
   },
 ];
 
 const FooterMenu: FC = () => {
   return (
-    <div
-      className="bg-primary-mustard fixed bottom-0 w-full"
-    >
+    <div className="bg-primary-mustard fixed bottom-0 w-full">
       <ul className="flex container mx-auto">
         {menuLists.map((list) => {
           return (
             <li key={list.label} className="flex-1 text-center p-2">
-              <Link href={list.linkTo}>
+              <Link href={list.linkTo} target="_blank">
                 <Image
                   className="mx-auto"
                   src={list.imgSrc}
