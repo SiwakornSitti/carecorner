@@ -5,12 +5,12 @@ const Service: FC = () => {
   return (
     <section className="text-secondary-brown px-3 max-w-2xl mx-auto ">
       <div className="bg-white px-1 py-2 border border-secondary-yellow rounded-2xl mt-[-80px] shadow-md shadow-primary-mustard">
-        <h1 className="text-center text-sm">
+        <h1 className="text-center font-bold">
           รวมสินค้าและบริการ เพื่อสุขภาพ
           <br />
           ทั้งของกิน ของใช้ เพื่อคนรักสุขภาพ เด็ก ผู้สูงอายุ และผู้ป่วย
         </h1>
-        <ul className="flex text-center">
+        <ul className="flex text-center text-sm">
           <li className="flex-1 p-1">
             <Image
               className="mx-auto h-20"

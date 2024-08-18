@@ -25,38 +25,3 @@ body {
     text-wrap: balance;
   }
 }
-
-p,
-b {
-  font-size: 10px;
-  @media only screen and (min-width: 600px) {
-    font-size: 12px;
-  }
-}
-
-h1 {
-  font-size: 16px;
-  font-weight: bold;
-
-  @media only screen and (min-width: 600px) {
-    font-size: 18px;
-  }
-}
-
-h2 {
-  font-size: 14px;
-  font-weight: bold;
-
-  @media only screen and (min-width: 600px) {
-    font-size: 16px;
-  }
-}
-
-h3 {
-  font-size: 12px;
-  font-weight: bold;
-
-  @media only screen and (min-width: 600px) {
-    font-size: 14px;
-  }
-}

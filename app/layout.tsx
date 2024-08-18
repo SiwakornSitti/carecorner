@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Prompt } from "next/font/google";
 import classNames from "classnames";
 import "./globals.css";
-import Navbar from "./_component/Navbar";
-import FooterMenu from "./_component/FooterMenu";
+import Navbar from "./_components/Navbar";
+import FooterMenu from "./_components/FooterMenu";
 
 const inter = Prompt({
   subsets: ["latin"],
