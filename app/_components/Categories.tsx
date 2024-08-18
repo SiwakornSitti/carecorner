@@ -12,7 +12,7 @@ const Categories: FC<CategoriesProps> = ({ className }) => {
       <h1 className="text-secondary-brown mb-5 font-bold text-center">
         ช้อปตามหมวดหมู่
       </h1>
-      <div className="grid grid-cols-2 gap-2 sm:gap-5 mb-8">
+      <div className="grid grid-cols-2 gap-3 sm:gap-5 mb-8 px-3">
         {CATEGORIES.map((category) => {
           return (
             <div
