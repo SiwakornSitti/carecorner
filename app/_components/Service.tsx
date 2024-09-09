@@ -24,7 +24,7 @@ const Service: FC<ServiceProps> = ({ className, isShowTitle = false }) => {
           </h1>
         )}
 
-        <ul className="flex text-center text-sm">
+        <ul className="flex text-center text-sm p-2">
           <li className="flex-1 p-1">
             <Image
               className="mx-auto h-20"
