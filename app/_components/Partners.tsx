@@ -5,11 +5,11 @@ import Marquee from "react-fast-marquee";
 
 const Partners: FC = () => {
   return (
-    <section className="w-full mx-auto mb-8">
+    <section className="w-full mx-auto mb-10">
       <h1 className="text-secondary-brown text-center mb-5 font-bold text-lg">
         พันธมิตรของเรา
       </h1>
-      <div className="w-full h-40 z-0 relative">
+      <div className="w-full z-0 relative">
         <Marquee gradient={false} pauseOnHover speed={50} delay={2}>
           <div className="grid grid-rows-2 grid-flow-col gap-2">
             {PARTNERS.map((partner) => {
