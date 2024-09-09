@@ -18,8 +18,8 @@ const Partners: FC = () => {
                   key={partner.name}
                   alt={partner.name}
                   src={partner.src}
-                  width={64}
-                  height={64}
+                  width={80}
+                  height={80}
                   className="mx-auto"
                 />
               );
