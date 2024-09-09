@@ -1,15 +1,29 @@
-import { FC } from "react";
+import { FC, ReactElement } from "react";
 import Image from "next/image";
+import classNames from "classnames";
 
-const Service: FC = () => {
+export type ServiceProps = {
+  className?: string;
+  isShowTitle?: boolean;
+};
+
+const Service: FC<ServiceProps> = ({ className, isShowTitle = false }) => {
   return (
-    <section className="text-secondary-brown px-3 max-w-2xl mx-auto ">
-      <div className="bg-white px-1 py-2 border border-secondary-yellow rounded-2xl mt-[-80px] shadow-md shadow-primary-mustard">
-        <h1 className="text-center font-bold">
-          รวมสินค้าและบริการ เพื่อสุขภาพ
-          <br />
-          ทั้งของกิน ของใช้ เพื่อคนรักสุขภาพ เด็ก ผู้สูงอายุ และผู้ป่วย
-        </h1>
+    <section
+      className={classNames(
+        "text-secondary-brown px-3 max-w-2xl mx-auto",
+        className
+      )}
+    >
+      <div className="bg-white px-1 py-2 border border-secondary-yellow rounded-2xl shadow-md shadow-primary-mustard">
+        {isShowTitle && (
+          <h1 className="text-center font-bold">
+            รวมสินค้าและบริการ เพื่อสุขภาพ
+            <br />
+            ทั้งของกิน ของใช้ เพื่อคนรักสุขภาพ เด็ก ผู้สูงอายุ และผู้ป่วย
+          </h1>
+        )}
+
         <ul className="flex text-center text-sm">
           <li className="flex-1 p-1">
             <Image
@@ -39,7 +53,7 @@ const Service: FC = () => {
               width={75}
               height={75}
             />
-            <p>มีบริการจัดคอร์สอาหาร เฉพาะบุคคล โดยแพทย์ และนักกำหนดอาหาร</p>
+            <p>มีบริการจัดคอร์สอาหารเฉพาะบุคคลและ catering</p>
           </li>
           <li className="flex-1 p-1">
             <Image

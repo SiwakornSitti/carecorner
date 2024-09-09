@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Cover: FC = () => {
   return (
-    <section className="pb-20 bg-primary-mustard">
+    <section className="bg-primary-mustard" style={{paddingBottom:80}}>
       <div className="container mx-auto">
         <div className="relative">
           <Image

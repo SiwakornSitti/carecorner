@@ -10,7 +10,7 @@ export type ProductsProps = {
 const Products: FC<ProductsProps> = ({ className }) => {
   return (
     <section className={classNames("w-full", className)}>
-      <h1 className="text-secondary-brown mb-5 font-bold text-center">
+      <h1 className="text-secondary-brown mb-5 font-bold text-center text-lg">
         สินค้าแนะนำสำหรับคุณ
       </h1>
       <div className="flex gap-x-4 overflow-x-auto md:justify-center">

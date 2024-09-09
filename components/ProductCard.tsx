@@ -21,13 +21,13 @@ const ProductCard: FC<ProductCardProps> = ({
 }) => {
   return (
     <div className="flex flex-col bg-white text-black max-w-60 min-w-60 rounded border border-whiteblue">
-      <div className="w-full h-40 flex justify-center items-center">
+      <div className="w-full h-48 flex justify-center items-center">
         <Image
           src={imageSrc}
-          height={150}
-          width={200}
+          height={600}
+          width={400}
           alt={name}
-          className="max-w-full max-h-40"
+          className="max-w-full max-h-48"
         />
       </div>
       <div className="p-3 flex flex-col flex-1 justify-between">

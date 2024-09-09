@@ -1,10 +1,12 @@
 import { FC } from "react";
 import Image from "next/image";
+import Service from "./Service";
 
 const Footer: FC = () => {
   return (
     <section className="bg-white w-full">
       <div className="container mx-auto p-4">
+        <Service />
         <p className="text-secondary-brown max-w-xs text-center my-8 mx-auto">
           นโยบายการคืนสินค้า: สามารถคืนสืนค้าที่ชำรุดจากการผลิต หรือการจัดส่งได้
           ภายใน 7 วันหลังจากได้รับสินค้า

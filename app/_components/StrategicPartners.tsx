@@ -9,7 +9,7 @@ export type StrategicPartnersProps = {
 const StrategicPartners: FC<StrategicPartnersProps> = ({ className }) => {
   return (
     <section className={className}>
-      <h1 className="text-secondary-brown mb-5 font-bold">
+      <h1 className="text-secondary-brown mb-5 font-bold text-lg">
         พันธมิตรเชิงกลยุทธ์ของเรา
       </h1>
       <div className="flex justify-center gap-2">

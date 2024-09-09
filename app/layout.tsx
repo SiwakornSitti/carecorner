@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html style={{ fontSize: 13 }} lang="en">
       <body className={classNames(inter.className, "bg-primary-cream")}>
         <Navbar>{children}</Navbar>
         <FooterMenu />
