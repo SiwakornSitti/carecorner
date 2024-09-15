@@ -12,7 +12,7 @@ const inter = Prompt({
 });
 
 export const metadata: Metadata = {
-  title: `Care Corner and More - ${nanoid()}`,
+  title: `${nanoid()} - Care Corner and More}`,
   description: "มุมที่พร้อมดูแลคุณ ทุกช่วงวัย",
 };
 
