@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { CATEGORIES } from "@/constants/categories";
 import Image from "next/image";
+import Link from "next/link";
 
 export type CategoriesProps = {
   className?: string;
@@ -30,12 +31,7 @@ const Categories: FC<CategoriesProps> = ({ className }) => {
                 />
               </div>
               <div className="p-3 text-secondary-brown">
-                <h2
-                  className="font-bold mb-2"
-                  style={{
-                    textShadow: "3px -2px 2px #FFFFFF",
-                  }}
-                >
+                <h2 className="font-bold mb-2 text-white-shadow">
                   {category.title}
                 </h2>
                 <p className="text-sm">{category.description}</p>
@@ -46,14 +42,12 @@ const Categories: FC<CategoriesProps> = ({ className }) => {
       </div>
       <div>
         <button className="bg-secondary-yellow rounded-2xl w-full py-3 drop-shadow-lg">
-          <b
-            className="text-secondary-brown"
-            style={{
-              textShadow: "3px -3px 2px #FFFFFF",
-            }}
+          <Link
+            href="/products"
+            className="text-secondary-brown text-white-shadow font-bold"
           >
             หรือ คลิกที่นี่ เพื่อดูสินค้าทั้งหมด
-          </b>
+          </Link>
         </button>
       </div>
     </section>

@@ -23,8 +23,10 @@ export default function RootLayout({
   return (
     <html style={{ fontSize: 13 }} lang="en">
       <body className={classNames(inter.className, "bg-primary-cream")}>
-        <Navbar>{children}</Navbar>
-        <FooterMenu />
+        <Navbar>
+          {children}
+          <FooterMenu />
+        </Navbar>
       </body>
     </html>
   );

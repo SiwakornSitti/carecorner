@@ -58,3 +58,11 @@ body {
     text-wrap: balance;
   }
 }
+
+.text-white-shadow {
+  text-shadow: 3px -3px 2px #ffffff;
+}
+
+.card-shadow {
+  box-shadow: 2px 4px 4px #00000040;
+}
