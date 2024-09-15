@@ -4,6 +4,7 @@ import classNames from "classnames";
 import "./globals.css";
 import Navbar from "./_components/Navbar";
 import FooterMenu from "./_components/FooterMenu";
+import { nanoid } from "nanoid";
 
 const inter = Prompt({
   subsets: ["latin"],
@@ -11,7 +12,7 @@ const inter = Prompt({
 });
 
 export const metadata: Metadata = {
-  title: "Care Corner and More",
+  title: `Care Corner and More - ${nanoid()}`,
   description: "มุมที่พร้อมดูแลคุณ ทุกช่วงวัย",
 };
 
