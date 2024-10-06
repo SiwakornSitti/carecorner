@@ -1,3 +1,4 @@
+export const runtime = "edge";
 import type { Metadata } from "next";
 import { Prompt } from "next/font/google";
 import classNames from "classnames";
