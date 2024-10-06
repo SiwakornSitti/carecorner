@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
 import Service from "./Service";
+import Divide from "@/components/Divide";
 
 const Footer: FC = () => {
   return (
@@ -11,13 +12,7 @@ const Footer: FC = () => {
           นโยบายการคืนสินค้า: สามารถคืนสืนค้าที่ชำรุดจากการผลิต หรือการจัดส่งได้
           ภายใน 7 วันหลังจากได้รับสินค้า
         </p>
-        <div className="mx-auto flex justify-center items-center my-8">
-          <Image alt="logo" src="/logo-only.webp" width={22} height={21} />
-          <Image alt="logo" src="/logo-only.webp" width={22} height={21} />
-          <Image alt="logo" src="/logo-only.webp" width={22} height={21} />
-          <Image alt="logo" src="/logo-only.webp" width={22} height={21} />
-          <Image alt="logo" src="/logo-only.webp" width={22} height={21} />
-        </div>
+        <Divide />
         <h1 className="text-primary-mustard font-bold mb-2">ติดต่อเรา</h1>
         <div className="flex justify-between">
           <div>

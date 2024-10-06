@@ -20,7 +20,7 @@ const ProductCard: FC<ProductCardProps> = ({
   imageSrc,
 }) => {
   return (
-    <div className="flex flex-col bg-white text-black max-w-56 min-w-56 rounded border border-whiteblue">
+    <div className="flex flex-col bg-white text-black max-w-52 min-w-52 md:max-w-56 md:min-w-56 rounded border border-whiteblue">
       <div className="w-full h-48 flex justify-center items-center">
         <Image
           src={imageSrc}

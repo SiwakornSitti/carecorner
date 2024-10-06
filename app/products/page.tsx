@@ -1,9 +1,9 @@
 "use client";
 import ProductCard from "@/components/ProductCard";
 import { PRODUCTS } from "@/constants/products";
-import { SHOP_BY_CATEGORIES } from "@/constants/categories";
+// import { SHOP_BY_CATEGORIES } from "@/constants/categories";
 import { Button } from "@nextui-org/button";
-import { AdjustmentsHorizontalIcon } from "@heroicons/react/24/solid";
+// import { AdjustmentsHorizontalIcon } from "@heroicons/react/24/solid";
 import {
   Modal,
   ModalContent,
@@ -12,29 +12,33 @@ import {
   ModalFooter,
   useDisclosure,
 } from "@nextui-org/modal";
-import Image from "next/image";
+import ShopByCategory from "@/app/products/_components/ShopByCategory";
+import Divide from "@/components/Divide";
+// import Image from "next/image";
 
 export default function Products() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
-  console.log("isOpen", isOpen);
+
   return (
     <>
       <main className="flex min-h-screen flex-col items-center justify-between pb-20 text-secondary-brown">
-        <div className="container mx-auto p-3">
+        <div className="container mx-auto p-3 md:pt-6">
+          <ShopByCategory />
+          <Divide />
           <div className="flex justify-between mb-4">
             <div className="flex items-center">
-              <h1>All Products สินค้าทั้งหมด</h1>
+              <h1 className="font-semi">All Products สินค้าทั้งหมด</h1>
             </div>
 
-            <div>
+            {/* <div>
               <Button onClick={onOpen}>
                 <AdjustmentsHorizontalIcon className="w-6 h-6" />
                 ช้อปตามหมวดหมู่
               </Button>
-            </div>
+            </div> */}
           </div>
 
-          <div className="flex gap-x-2 gap-y-2 justify-center md:justify-start flex-wrap">
+          <div className="flex gap-x-2 gap-y-2 justify-center md:justify-start lg:gap-x-5 lg:gap-y-5 flex-wrap">
             {PRODUCTS.map((product) => {
               const price =
                 product.sku[0].options?.[0]?.options?.[0]?.options?.[0]
@@ -47,6 +51,7 @@ export default function Products() {
                   ?.label ||
                 product.sku[0].options?.[0]?.options?.[0]?.label ||
                 product.sku[0].options?.[0]?.label;
+
               return (
                 <ProductCard
                   key={product.name}
@@ -78,7 +83,7 @@ export default function Products() {
               </ModalHeader>
               <ModalBody>
                 <div className="flex flex-wrap gap-2 justify-center">
-                  {SHOP_BY_CATEGORIES.map((category) => {
+                  {/* {SHOP_BY_CATEGORIES.map((category) => {
                     return (
                       <Image
                         key={category}
@@ -88,7 +93,7 @@ export default function Products() {
                         height={60}
                       />
                     );
-                  })}
+                  })} */}
                 </div>
               </ModalBody>
               <ModalFooter>

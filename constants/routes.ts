@@ -1,3 +1,9 @@
+import {
+  CATEGORIES_GROUP_1,
+  CATEGORIES_GROUP_2,
+  CATEGORIES_GROUP_3,
+} from "@/constants/categories";
+
 export const ROUTES = [
   { name: "Home | หน้าหลัก", path: "/" },
   { name: "About Us | เกี่ยวกับเรา", path: "/about-us" },
@@ -7,23 +13,15 @@ export const ROUTES = [
     subRoutes: {
       name: "มุมคนรักสุขภาพและทุกคนในครอบครัว",
       routes: [
-        {
-          name: "มุมคลีน คีโต คาร์บต่ำ โซเดียมต่ำ",
-          path: "/products",
-        },
-        {
-          name: "มุมเครื่องดื่ม เพื่อสุขภาพ",
-          path: "/products",
-        },
-        {
-          name: "มุมขนม เพื่อสุขภาพ",
-          path: "/products",
-        },
-        {
-          name: "มุม SUPERFOODS",
-          path: "/products",
-        },
-      ],
+        ...CATEGORIES_GROUP_1,
+        ...CATEGORIES_GROUP_2,
+        ...CATEGORIES_GROUP_3,
+      ].map((category) => {
+        return {
+          name: category.label,
+          path: `/products/${category.label}`,
+        };
+      }),
     },
   },
   {

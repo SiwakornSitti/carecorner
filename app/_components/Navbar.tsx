@@ -26,7 +26,7 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
     setIsOpen(!isOpen);
   };
 
-  console.log("pathname", pathname);
+  const path = decodeURIComponent(pathname)
 
   return (
     <div className="pt-32">
@@ -37,15 +37,19 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
         <div className="bg-primary-mustard">
           <div className="flex container mx-auto items-center py-1 pr-3">
             <div className="flex items-center">
-              <Image
-                src="/logo.webp"
-                alt="care-corner-logo"
-                width={89}
-                height={41}
-              />
-              <p className="text-sm p-2 font-light">
-                มุมที่พร้อมดูแลคุณ ทุกช่วงวัย
-              </p>
+              <Link href="/">
+                <Image
+                  src="/logo.webp"
+                  alt="care-corner-logo"
+                  width={89}
+                  height={41}
+                  className="inline"
+                />
+
+                <p className="text-sm p-2 font-light inline">
+                  มุมที่พร้อมดูแลคุณ ทุกช่วงวัย
+                </p>
+              </Link>
             </div>
 
             <div className="flex gap-x-2 flex-1 items-center justify-end">
@@ -124,12 +128,23 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
                       />
                       {route?.subRoutes?.name}
                     </div>
-                    <ul className="pl-7">
+                    <ul>
                       {route?.subRoutes?.routes?.map((subRoute) => {
                         return (
-                          <li key={subRoute.name} className="p-4">
-                            {subRoute.name}
-                          </li>
+                          <Link href={subRoute.path} key={subRoute.name}>
+                            <li
+                              className={classNames(
+                                "p-4 pl-7 hover:bg-secondary-orange hover:text-white",
+                                {
+                                  "bg-secondary-orange":
+                                  subRoute.path === path,
+                                  "text-white": subRoute.path === path,
+                                }
+                              )}
+                            >
+                              {subRoute.name}
+                            </li>
+                          </Link>
                         );
                       })}
                     </ul>

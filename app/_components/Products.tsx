@@ -14,7 +14,7 @@ const Products: FC<ProductsProps> = ({ className }) => {
         สินค้าแนะนำสำหรับคุณ
       </h1>
       <div className="flex gap-x-4 overflow-x-auto md:justify-center">
-        {PRODUCTS.map((product) => {
+        {PRODUCTS.slice(0,5).map((product) => {
           const price =
             product.sku[0].options?.[0]?.options?.[0]?.options?.[0]?.value ||
             product.sku[0].options?.[0]?.options?.[0]?.value ||
