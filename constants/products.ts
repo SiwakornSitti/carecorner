@@ -522,14 +522,17 @@ export const PRODUCTS: Product[] = [
           {
             label: "1 ซอง x 100 กรัม",
             value: "68",
+            beforeDiscount: "69",
           },
           {
             label: "6 ซอง",
             value: "399",
+            beforeDiscount: "414",
           },
           {
             label: "10 ซอง",
             value: "469",
+            beforeDiscount: "690",
           },
         ],
       },
@@ -649,7 +652,7 @@ export const PRODUCTS: Product[] = [
  =========================
  
  ***จัดส่งแบบแช่แข็ง ควบคุมอุณหภูมิ เพื่อรักษาคุณภาพสินค้าให้ดีที่สุด***
- ***สามารถสั่งซื้อร่วมกับ Nimnim ข้าวไข่ขาวได้ โดยทางร้านจะแจ้งเลขติดตามพัสดุให้ทางแชท***
+ ***สามารถสั่งซื้อร่วมกับ Nimnim ข้าวไข่ขาวได้ โดยทางร้านจะแจ้งเลขติดตามพั สดุให้ทางแชท***
  ***เฉพาะสินค้านี้ จัดส่งทุกวัน ยกเว้นวันอาทิตย์***
  
  ใหม่! ไส้กรอกปลารมควันผสมไข่ขาว ตรามินนะ
@@ -1783,6 +1786,7 @@ NimNim's high-protein, grain-based macaroni for the fit and firm. Made from 4 ki
         options: [
           {
             label: "1 ขวด x 400 มล.",
+            beforeDiscount: "220",
             value: "209",
           },
         ],

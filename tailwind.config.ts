@@ -20,6 +20,7 @@ const config: Config = {
           mustard: "#ffb757",
           orange: "#f18369",
           cream: "#fffadc",
+          earth: "#FFE8B1",
         },
         secondary: {
           yellow: "#ffcf6d",

@@ -1,10 +1,12 @@
 import { FC } from "react";
 import Image from "next/image";
 import { Button } from "@nextui-org/button";
+import classNames from "classnames";
 
 export type ProductCardProps = {
   name: string;
   description: string;
+  discountPrice?: number | string;
   price?: number | string;
   size?: string;
   recommends: string[];
@@ -15,6 +17,7 @@ const ProductCard: FC<ProductCardProps> = ({
   name,
   description,
   price = 0,
+  discountPrice = 0,
   size = "",
   recommends,
   imageSrc,
@@ -45,9 +48,37 @@ const ProductCard: FC<ProductCardProps> = ({
           <div className="text-sm text-secondary-brown tracking-wide">
             ( {size} )
           </div>
-          <div className="text-sm text-secondary-orange font-bold my-2">
-            ฿ {price}
+          <div
+            className={classNames("flex gap-x-4 my-2", {
+              "h-10": !price,
+            })}
+          >
+            <div
+              className="text-sm text-secondary-orange font-bold flex items-center"
+              style={{
+                textShadow: `2px 2px 4px #00000033`,
+              }}
+            >
+              {`฿ ${discountPrice}`}
+            </div>
+            {Boolean(price) && (
+              <div className="text-sm line-through flex items-center">
+                ฿ {price}
+              </div>
+            )}
+
+            {Boolean(price) && (
+              <div className="text-xs text-secondary-orange font-semibold bg-primary-earth rounded-full w-10 h-10 flex justify-center items-center">
+                -
+                {(
+                  ((Number(price) - Number(discountPrice)) / Number(price)) *
+                  100
+                ).toFixed(0)}
+                %
+              </div>
+            )}
           </div>
+
           <Button className="text-white font-bold" color="warning">
             ช้อปเลย
           </Button>

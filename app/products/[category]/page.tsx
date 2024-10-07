@@ -28,6 +28,12 @@ export default function ProductByCategory({
               product.sku[0].options?.[0]?.options?.[0]?.value ||
               product.sku[0].options?.[0]?.value;
 
+            const beforeDiscount =
+              product.sku[0].options?.[0]?.options?.[0]?.options?.[0]
+                ?.beforeDiscount ||
+              product.sku[0].options?.[0]?.options?.[0]?.beforeDiscount ||
+              product.sku[0].options?.[0]?.beforeDiscount;
+
             const size =
               product.sku[0].options?.[0]?.options?.[0]?.options?.[0]?.label ||
               product.sku[0].options?.[0]?.options?.[0]?.label ||
@@ -38,7 +44,8 @@ export default function ProductByCategory({
                 imageSrc={product.image}
                 name={product.name}
                 description={product.description}
-                price={price}
+                price={beforeDiscount}
+                discountPrice={price}
                 size={size}
                 recommends={product.recommends}
               />
