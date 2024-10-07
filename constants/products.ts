@@ -1747,12 +1747,12 @@ NimNim's high-protein, grain-based macaroni for the fit and firm. Made from 4 ki
   //29
   {
     name: "V Care วีแคร์ สบู่เหลว",
-    image: "/product/V Care สบู่/212.webp",
+    image: "/product/VCareSoap/212.webp",
     images: [
-      "/product/V Care สบู่/212.webp",
-      "/product/V Care สบู่/213.webp",
-      "/product/V Care สบู่/214.webp",
-      "/product/V Care สบู่/215.webp",
+      "/product/VCareSoap/212.webp",
+      "/product/VCareSoap/213.webp",
+      "/product/VCareSoap/214.webp",
+      "/product/VCareSoap/215.webp",
     ],
     recommends: ["ผู้สูงอายุ", "ผู้ป่วยติดเตียง", "ผู้ป่วยที่มีภาวะพึ่งพิง"],
     categories: [
