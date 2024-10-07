@@ -26,7 +26,7 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
     setIsOpen(!isOpen);
   };
 
-  const path = decodeURIComponent(pathname)
+  const path = decodeURIComponent(pathname);
 
   return (
     <div className="pt-32">
@@ -96,7 +96,7 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
         <div
           ref={ref}
           className={classNames(
-            "w-80 h-full text-secondary-brown bg-white text-sm fixed z-50 transition-all",
+            "w-80 h-full text-secondary-brown bg-white text-sm fixed z-50 transition-all overflow-y-scroll pb-40",
             { "left-[-80rem]": !isOpen, "left-0": isOpen }
           )}
         >
@@ -105,6 +105,7 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
               <Fragment key={route.name}>
                 <div className="font-semibold flex">
                   <Link
+                    onClick={toggleDrawer}
                     href={route.path}
                     className={classNames(
                       "p-3 w-full d-block hover:bg-secondary-orange hover:text-white",
@@ -131,13 +132,16 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
                     <ul>
                       {route?.subRoutes?.routes?.map((subRoute) => {
                         return (
-                          <Link href={subRoute.path} key={subRoute.name}>
+                          <Link
+                            href={subRoute.path}
+                            key={subRoute.name}
+                            onClick={toggleDrawer}
+                          >
                             <li
                               className={classNames(
                                 "p-4 pl-7 hover:bg-secondary-orange hover:text-white",
                                 {
-                                  "bg-secondary-orange":
-                                  subRoute.path === path,
+                                  "bg-secondary-orange": subRoute.path === path,
                                   "text-white": subRoute.path === path,
                                 }
                               )}
