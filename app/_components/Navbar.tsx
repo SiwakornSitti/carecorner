@@ -29,7 +29,7 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
   const path = decodeURIComponent(pathname);
 
   return (
-    <div className="pt-32">
+    <div style={{ paddingTop: 106 }}>
       <div className="fixed w-full top-0 z-50">
         <div className="font-bold text-primary-orange text-xs text-center p-1.5 bg-primary-cream">
           ส่งฟรี! เมื่อช้อปครบ 1,999.- (ส่วนลดค่าจัดส่ง สูงสุด 100.-)

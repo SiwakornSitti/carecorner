@@ -41,14 +41,11 @@ const Categories: FC<CategoriesProps> = ({ className }) => {
         })}
       </div>
       <div>
-        <button className="bg-secondary-yellow rounded-2xl w-full py-3 drop-shadow-lg">
-          <Link
-            href="/products"
-            className="text-secondary-brown text-white-shadow font-bold"
-          >
+        <Link href="/products">
+          <button className="bg-secondary-yellow rounded-2xl w-full py-3 drop-shadow-lg text-secondary-brown text-white-shadow font-bold">
             หรือ คลิกที่นี่ เพื่อดูสินค้าทั้งหมด
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
     </section>
   );

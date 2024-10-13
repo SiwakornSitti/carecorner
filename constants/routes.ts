@@ -19,7 +19,7 @@ export const ROUTES = [
       ].map((category) => {
         return {
           name: category.label,
-          path: `/products/${category.label}`,
+          path: `/products?category=${category.label}`,
         };
       }),
     },

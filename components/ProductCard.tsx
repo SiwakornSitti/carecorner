@@ -1,7 +1,8 @@
 import { FC } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@nextui-org/button";
-import classNames from "classnames";
+import Price from "./Price";
 
 export type ProductCardProps = {
   name: string;
@@ -11,6 +12,7 @@ export type ProductCardProps = {
   size?: string;
   recommends: string[];
   imageSrc: string;
+  category?: string;
 };
 
 const ProductCard: FC<ProductCardProps> = ({
@@ -21,6 +23,7 @@ const ProductCard: FC<ProductCardProps> = ({
   size = "",
   recommends,
   imageSrc,
+  category = "",
 }) => {
   return (
     <div className="flex flex-col bg-white text-black max-w-52 min-w-52 md:max-w-56 md:min-w-56 rounded border border-whiteblue">
@@ -48,40 +51,14 @@ const ProductCard: FC<ProductCardProps> = ({
           <div className="text-sm text-secondary-brown tracking-wide">
             ( {size} )
           </div>
-          <div
-            className={classNames("flex gap-x-4 my-2", {
-              "h-10": !price,
-            })}
+          <Price price={price} discountPrice={discountPrice} />
+          <Link
+            href={`/products/${name}${category ? `?category=${category}` : ""}`}
           >
-            <div
-              className="text-sm text-secondary-orange font-bold flex items-center"
-              style={{
-                textShadow: `2px 2px 4px #00000033`,
-              }}
-            >
-              {`฿ ${discountPrice}`}
-            </div>
-            {Boolean(price) && (
-              <div className="text-sm line-through flex items-center">
-                ฿ {price}
-              </div>
-            )}
-
-            {Boolean(price) && (
-              <div className="text-xs text-secondary-orange font-semibold bg-primary-earth rounded-full w-10 h-10 flex justify-center items-center">
-                -
-                {(
-                  ((Number(price) - Number(discountPrice)) / Number(price)) *
-                  100
-                ).toFixed(0)}
-                %
-              </div>
-            )}
-          </div>
-
-          <Button className="text-white font-bold" color="warning">
-            ช้อปเลย
-          </Button>
+            <Button className="text-white font-bold" color="warning">
+              ช้อปเลย
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

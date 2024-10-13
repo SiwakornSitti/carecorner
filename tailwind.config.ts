@@ -21,6 +21,7 @@ const config: Config = {
           orange: "#f18369",
           cream: "#fffadc",
           earth: "#FFE8B1",
+          warning: "#df5d3f",
         },
         secondary: {
           yellow: "#ffcf6d",
@@ -31,6 +32,16 @@ const config: Config = {
       },
     },
   },
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            warning: "#df5d3f",
+          },
+        },
+      },
+    }),
+  ],
 };
 export default config;

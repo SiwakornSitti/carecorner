@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { usePathname } from "next/navigation";
 import {
   CATEGORIES_GROUP_1,
   CATEGORIES_GROUP_2,
@@ -14,6 +15,8 @@ const GROUPING_CATEGORIES = [
 ];
 
 const ShopByCategory: FC = () => {
+  const pathname = usePathname();
+
   return (
     <section>
       <h1 className="text-secondary-brown mb-5 font-bold text-center text-lg">
@@ -34,7 +37,7 @@ const ShopByCategory: FC = () => {
                       className="flex flex-col items-center"
                       style={{ minWidth: 76, maxWidth: 76 }}
                     >
-                      <Link href={`/products/${category.value}`}>
+                      <Link href={`${pathname}?category=${category.value}`}>
                         <Image
                           src={category.image}
                           alt={category.label}
