@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { CATEGORIES } from "@/constants/categories";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,7 +12,7 @@ const Categories: FC<CategoriesProps> = ({ className }) => {
   return (
     <section className={className}>
       <h1 className="text-secondary-brown mb-5 font-bold text-center text-lg">
-        ช้อปตามหมวดหมู่
+        Shop by Category | ช้อปตามหมวดหมู่
       </h1>
       <div className="grid grid-cols-2 gap-3 sm:gap-5 mb-8 px-3">
         {CATEGORIES.map((category) => {
@@ -30,10 +31,18 @@ const Categories: FC<CategoriesProps> = ({ className }) => {
                   style={{ maxHeight: 190 }}
                 />
               </div>
-              <div className="p-3 text-secondary-brown">
-                <h2 className="font-bold mb-2 text-white-shadow">
-                  {category.title}
-                </h2>
+              <div className="px-3 pb-3 pt-5 text-secondary-brown">
+                <div className="flex">
+                  <h2 className="font-bold mb-2 text-white-shadow whitespace-pre-line flex-1">
+                    {category.title}
+                  </h2>
+                  <div className="">
+                    <button className="bg-primary-orange rounded-xl px-1 text-lg">
+                      <ArrowRightIcon className="h-5 w-8 text-white font-bold" />
+                    </button>
+                  </div>
+                </div>
+
                 <p className="text-sm">{category.description}</p>
               </div>
             </div>
@@ -43,7 +52,10 @@ const Categories: FC<CategoriesProps> = ({ className }) => {
       <div>
         <Link href="/products">
           <button className="bg-secondary-yellow rounded-2xl w-full py-3 drop-shadow-lg text-secondary-brown text-white-shadow font-bold">
-            หรือ คลิกที่นี่ เพื่อดูสินค้าทั้งหมด
+            หรือ คลิกที่นี่ เพื่อดูสินค้าทั้งหมด{" "}
+            <div className="inline-block bg-primary-orange rounded-xl px-1 text-lg ml-5">
+              <ArrowRightIcon className="h-5 w-8 text-white font-bold" />
+            </div>
           </button>
         </Link>
       </div>

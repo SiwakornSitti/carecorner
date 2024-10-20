@@ -158,7 +158,7 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
             );
           })}
         </div>
-        <div className="w-full md:w-auto md:flex-1">{children}</div>
+        <div className="w-full md:flex-1">{children}</div>
       </div>
     </div>
   );

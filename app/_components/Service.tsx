@@ -27,7 +27,7 @@ const Service: FC<ServiceProps> = ({ className, isShowTitle = false }) => {
         <ul className="flex text-center text-sm p-2">
           <li className="flex-1 p-1">
             <Image
-              className="mx-auto h-20"
+              className="h-24 w-24 mx-auto"
               src="/protect.webp"
               alt="trust and safety"
               width={75}
@@ -37,7 +37,7 @@ const Service: FC<ServiceProps> = ({ className, isShowTitle = false }) => {
           </li>
           <li className="flex-1 p-1">
             <Image
-              className="mx-auto h-20"
+              className="h-24 w-24 mx-auto"
               src="/delivery.webp"
               alt="fast delivery"
               width={75}
@@ -47,8 +47,8 @@ const Service: FC<ServiceProps> = ({ className, isShowTitle = false }) => {
           </li>
           <li className="flex-1 p-1">
             <Image
+              className="h-24 w-24 mx-auto"
               src="/good-food.webp"
-              className="mx-auto h-20"
               alt="catering"
               width={75}
               height={75}
@@ -57,8 +57,8 @@ const Service: FC<ServiceProps> = ({ className, isShowTitle = false }) => {
           </li>
           <li className="flex-1 p-1">
             <Image
+              className="h-24 w-24 mx-auto"
               src="/talking.webp"
-              className="mx-auto h-20"
               alt="talking"
               width={75}
               height={75}

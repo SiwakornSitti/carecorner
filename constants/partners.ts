@@ -155,11 +155,15 @@ export const PARTNERS = [
 
 export const STRATEGIC_PARTNERS = [
   {
-    name: "joy-ride",
-    src: "/partner/joy-ride.webp",
-  },
-  {
     name: "young-happy",
     src: "/partner/young-happy.webp",
+  },
+  {
+    name: "modish",
+    src: "/partner/modish.webp",
+  },
+  {
+    name: "me-hug",
+    src: "/partner/meHug.webp",
   },
 ];

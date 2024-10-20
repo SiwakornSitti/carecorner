@@ -8,9 +8,9 @@ const Footer: FC = () => {
     <section className="bg-white w-full">
       <div className="container mx-auto p-4">
         <Service />
-        <p className="text-secondary-brown max-w-xs text-center my-8 mx-auto">
-          นโยบายการคืนสินค้า: สามารถคืนสืนค้าที่ชำรุดจากการผลิต หรือการจัดส่งได้
-          ภายใน 7 วันหลังจากได้รับสินค้า
+        <p className="text-secondary-brown max-w-md text-center my-8 mx-auto">
+          บริษัทฯ มีนโยบายรับคืนสืนค้าที่ชำรุดจากการผลิต หรือการจัดส่งได้ ภายใน
+          7 วันหลังจากได้รับสินค้า
         </p>
         <Divide />
         <h1 className="text-primary-mustard font-bold mb-2">ติดต่อเรา</h1>

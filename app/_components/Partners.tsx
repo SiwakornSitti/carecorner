@@ -7,7 +7,7 @@ const Partners: FC = () => {
   return (
     <section className="w-full mx-auto mb-10">
       <h1 className="text-secondary-brown text-center mb-5 font-bold text-lg">
-        พันธมิตรของเรา
+        Our Partners | พันธมิตรของเรา
       </h1>
       <div className="w-full z-0 relative">
         <Marquee gradient={false} pauseOnHover speed={50} delay={2}>

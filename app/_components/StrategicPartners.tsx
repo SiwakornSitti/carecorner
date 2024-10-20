@@ -10,7 +10,7 @@ const StrategicPartners: FC<StrategicPartnersProps> = ({ className }) => {
   return (
     <section className={className}>
       <h1 className="text-secondary-brown mb-5 font-bold text-lg">
-        พันธมิตรเชิงกลยุทธ์ของเรา
+        Our Strategic Partners | พันธมิตรเชิงกลยุทธ์ของเรา
       </h1>
       <div className="flex justify-center gap-2">
         {STRATEGIC_PARTNERS.map((partner) => {
