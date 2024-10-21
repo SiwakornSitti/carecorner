@@ -28,7 +28,7 @@ const Categories: FC<CategoriesProps> = ({ className }) => {
                   width={300}
                   height={300}
                   className="rounded-t-2xl"
-                  style={{ maxHeight: 190 }}
+                  style={{ height: 145 }}
                 />
               </div>
               <div className="px-3 pb-3 pt-5 text-secondary-brown">
