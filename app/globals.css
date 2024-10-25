@@ -66,3 +66,12 @@ body {
 .card-shadow {
   box-shadow: 2px 4px 4px #00000040;
 }
+
+.text-stork {
+  text-shadow: -2px -2px 0 white, 2px -2px 0 white, 2px 2px 0 white,
+    2px 2px 0 white;
+}
+
+.text-shadow {
+  text-shadow: 0 4px 8px rgb(73, 73, 73);
+}
