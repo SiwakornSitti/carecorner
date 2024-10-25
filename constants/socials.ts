@@ -14,6 +14,7 @@ export const SOCIALS = [
     image: "/social/LINE.png",
     alt: "line",
     linkTo: "https://lin.ee/FJ2bCMW",
+    qr: "/social/LINE-QR.png",
   },
   {
     title: "@carecornerandmore",

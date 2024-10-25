@@ -44,7 +44,7 @@ export default function ContactUs() {
           <div className="flex flex-col gap-y-4">
             {SOCIALS.map((social) => {
               return (
-                <div key={social.alt} className="flex gap-x-4">
+                <div key={social.alt} className="flex gap-x-4 relative">
                   <div>
                     <Link href={social.linkTo}>
                       <Image
@@ -61,6 +61,11 @@ export default function ContactUs() {
                     </Link>
                     <p className="text-sm">{social.subTitle}</p>
                   </div>
+                  {!!social.qr && (
+                    <div className="absolute right-0 top-[-10px]">
+                      <Image src={social.qr} alt="qr" width={56} height={56} />
+                    </div>
+                  )}
                 </div>
               );
             })}
