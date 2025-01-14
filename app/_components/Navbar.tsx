@@ -60,13 +60,18 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
           </div>
         </div>
         <div className="bg-primary-mustard">
-          <div className="p-2 flex container mx-auto">
-            <div className="flex gap-x-4 flex-1 items-center">
-              <button onClick={toggleDrawer}>
+          <div className="p-2 flex container mx-auto" style={{ height: 36 }}>
+            <div
+              className="flex gap-x-4 flex-1 items-center"
+              style={{ minWidth: 0 }}
+            >
+              <button onClick={toggleDrawer} className="min-w-6">
                 <Image src="/menu.svg" alt="menu-logo" width={20} height={14} />
               </button>
-              <p className="text-sm">
-                {ROUTES.find((route) => route.path === pathname)?.name}
+              <p className="text-sm truncate">
+                {ROUTES.find((route) => {
+                  return route.path != "/" && path.includes(route.path);
+                })?.name ?? ROUTES[0].name}
               </p>
             </div>
             <div className="flex-1 flex items-center justify-end">

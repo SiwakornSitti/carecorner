@@ -15,7 +15,7 @@ export default function Product({ params }: { params: { product: string } }) {
     <main className="flex min-h-screen flex-col items-center justify-between pb-20 text-secondary-brown">
       <div className="container mx-auto md:pt-6 p-3">
         <h1 className="mb-6">
-          <Link href="/products" className="hover:underline">
+          <Link href="/categories" className="hover:underline">
             All Products สินค้าทั้งหมด
           </Link>
           <span>{` > `}</span>

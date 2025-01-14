@@ -9,7 +9,7 @@ export const ROUTES = [
   { name: "About Us | เกี่ยวกับเรา", path: "/about-us" },
   {
     name: "Our Products | สินค้าของเรา",
-    path: "/products",
+    path: "/categories",
     subRoutes: {
       name: "มุมคนรักสุขภาพและทุกคนในครอบครัว",
       routes: [
@@ -19,7 +19,7 @@ export const ROUTES = [
       ].map((category) => {
         return {
           name: category.label,
-          path: `/products?category=${category.label}`,
+          path: `/categories/${category.label}`,
         };
       }),
     },

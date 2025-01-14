@@ -37,7 +37,7 @@ const ShopByCategory: FC = () => {
                       className="flex flex-col items-center"
                       style={{ minWidth: 76, maxWidth: 76 }}
                     >
-                      <Link href={`${pathname}?category=${category.value}`}>
+                      <Link href={`/categories/${category.value}`}>
                         <Image
                           src={category.image}
                           alt={category.label}

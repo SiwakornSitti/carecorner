@@ -32,16 +32,18 @@ const Categories: FC<CategoriesProps> = ({ className }) => {
                 />
               </div>
               <div className="px-3 pb-3 pt-5 text-secondary-brown">
-                <div className="flex">
-                  <h2 className="font-bold mb-2 text-white-shadow whitespace-pre-line flex-1">
-                    {category.title}
-                  </h2>
-                  <div className="">
-                    <button className="bg-primary-orange rounded-xl px-1 text-lg">
-                      <ArrowRightIcon className="h-5 w-8 text-white font-bold" />
-                    </button>
+                <Link href={category.url}>
+                  <div className="flex">
+                    <h2 className="font-bold mb-2 text-white-shadow whitespace-pre-line flex-1">
+                      {category.title}
+                    </h2>
+                    <div className="">
+                      <button className="bg-primary-orange rounded-xl px-1 text-lg">
+                        <ArrowRightIcon className="h-5 w-8 text-white font-bold" />
+                      </button>
+                    </div>
                   </div>
-                </div>
+                </Link>
 
                 <p className="text-sm">{category.description}</p>
               </div>
@@ -49,11 +51,11 @@ const Categories: FC<CategoriesProps> = ({ className }) => {
           );
         })}
       </div>
-      <div>
-        <Link href="/products">
+      <div className="px-3">
+        <Link href="/categories">
           <button className="bg-secondary-yellow rounded-2xl w-full py-3 drop-shadow-lg text-secondary-brown text-white-shadow font-bold">
             หรือ คลิกที่นี่ เพื่อดูสินค้าทั้งหมด{" "}
-            <div className="inline-block bg-primary-orange rounded-xl px-1 text-lg ml-5">
+            <div className="inline-block bg-primary-orange rounded-xl px-1 text-lg ml-5 align-sub">
               <ArrowRightIcon className="h-5 w-8 text-white font-bold" />
             </div>
           </button>

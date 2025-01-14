@@ -1,21 +1,16 @@
 "use client";
-import { useSearchParams } from "next/navigation";
 import ProductCard from "@/components/ProductCard";
 import { PRODUCTS } from "@/constants/products";
-import ShopByCategory from "@/app/_components/ShopByCategory";
-import Divide from "@/components/Divide";
+import { useParams } from "next/navigation";
 import Link from "next/link";
 
-export default function Products() {
-  const searchParams = useSearchParams();
-  const rawCategory = searchParams.get("category");
-  const category = decodeURIComponent(rawCategory || "");
+export default function Category() {
+  const params = useParams<{ category: string }>();
+  const category = decodeURIComponent(params.category);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pb-20 text-secondary-brown">
       <div className="container mx-auto p-3 md:pt-6">
-        <ShopByCategory />
-        <Divide />
         <div className="flex justify-between mb-4">
           <div className="flex items-center">
             <h1 className="font-semi">
@@ -34,7 +29,9 @@ export default function Products() {
 
         <div className="flex gap-x-2 gap-y-2 justify-center md:justify-start lg:gap-x-5 lg:gap-y-5 flex-wrap">
           {PRODUCTS.filter((product) => {
-            return category ? product.categories.includes(category) : true;
+            return category
+              ? product.categories.includes(category)
+              : true;
           }).map((product) => {
             const price =
               product.sku[0].options?.[0]?.options?.[0]?.options?.[0]?.value ||
