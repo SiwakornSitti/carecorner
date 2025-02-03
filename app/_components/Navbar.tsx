@@ -28,6 +28,10 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
 
   const path = decodeURIComponent(pathname);
 
+  const mainRoute = ROUTES.find((route) => {
+    return  route.path != "/" && path.includes(route.path);
+  }) ?? ROUTES[0]
+
   return (
     <div style={{ paddingTop: 106 }}>
       <div className="fixed w-full top-0 z-50">
@@ -69,9 +73,9 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
                 <Image src="/menu.svg" alt="menu-logo" width={20} height={14} />
               </button>
               <p className="text-sm truncate">
-                {ROUTES.find((route) => {
-                  return route.path != "/" && path.includes(route.path);
-                })?.name ?? ROUTES[0].name}
+               
+                <Link href={`${mainRoute?.path  }`}>{mainRoute?.name}</Link>
+                
               </p>
             </div>
             <div className="flex-1 flex items-center justify-end">
