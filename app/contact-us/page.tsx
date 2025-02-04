@@ -9,7 +9,7 @@ export default function ContactUs() {
     <main className="min-h-screen items-center pb-20 text-secondary-brown">
       <section className="pt-10 px-3 mb-10">
         <div className="bg-secondary-yellow px-2 py-6 rounded-xl relative text-center card-shadow">
-          <h1 className="font-bold text-xl mb-8 bg-white inline-block px-6 py-1 rounded-2xl">
+          <h1 className="font-bold text-xl mb-8 bg-white inline-block px-6 py-1 rounded-2xl text-stork">
             Contact Us | ติดต่อเรา
           </h1>
 

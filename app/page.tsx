@@ -6,6 +6,16 @@ import StrategicPartners from "@/app/_components/StrategicPartners";
 import Categories from "./_components/Categories";
 import Products from "./_components/Products";
 import Promotions from "./_components/Promotions";
+import Articles from "./_components/Articles";
+import { ARTICLES } from "@/constants/articles";
+
+const lastUpdateArticles = ARTICLES.slice(-2).map((each) => ({
+  id: each.id,
+  title: each.title,
+  subTitle: each.subTitle,
+  image: each.cover,
+  date: each.date
+}))
 
 export default function Home() {
   return (
@@ -17,6 +27,7 @@ export default function Home() {
       <Promotions className="mb-8" />
       <Products className="mb-8" />
       <Categories className="mb-8" />
+      <Articles className="mb-8" data={lastUpdateArticles} />
       <StrategicPartners className="mb-8" />
       <Partners />
       <Footer />

@@ -12,7 +12,7 @@ export default function AboutUs() {
             alt="home"
             className="absolute top-[-6rem]"
           />
-          <h1 className="font-bold text-2xl mb-4 text-white-shadow">
+          <h1 className="font-bold text-2xl mb-4 text-white-shadow text-stork">
             Our Company | บริษัทของเรา
           </h1>
           <b className="mb-4 block">

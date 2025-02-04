@@ -19,7 +19,7 @@ export default function Products() {
         <div className="flex justify-between mb-4">
           <div className="flex items-center">
             <h1 className="font-semi">
-              <Link href="/categories" className="hover:underline">
+              <Link href="/categories" className="hover:underline text-stork">
                 All Products สินค้าทั้งหมด
               </Link>
               {!!category && (

@@ -27,26 +27,26 @@ export const DATA_28_01_2025 = {
       }
 
       </style>
-      <img class="cover-image" src="/articles/28-01-2025_1.webp" width="400" />
+      <img class="cover-image" src="/articles/28-01-2025_1.webp" width="400" alt="สินค้าใหม่ Thai-Denmark Nutrical (ไทย-เดนมาร์ค นิวทริแคล)" />
       บริษัท แคร์ คอร์เนอร์ แอนด์ มอร์ จำกัด ร่วมโปรโมท สินค้าใหม่ Thai-Denmark Nutrical (ไทย-เดนมาร์ค นิวทริแคล) นวัตกรรมเครื่องดื่มยูเอชที สูตรโปรตีนนมและโปรตีนข้าว ในเทศกาลโคนมแห่งชาติ ประจำปี 2568 อ.มวกเหล็ก จ.สระบุรี<br/>
       <br/>
       เมื่อวันที่ 28 ม.ค. 2568 บริษัท แคร์ คอร์เนอร์ แอนด์ มอร์ จำกัด ได้ร่วมออกงานโปรโมท #สินค้าใหม่ Thai-Denmark Nutrical (ไทย-เดนมาร์ค นิวทริแคล)  เครื่องดื่มยูเอชที สูตรโปรตีนนมและโปรตีนข้าว ผสมวิตามินและเกลือแร่ ในเทศกาลโคนมแห่งชาติ ประจำปี 2568 อ.มวกเหล็ก จ.สระบุรี ร่วมกับ องค์การส่งเสริมกิจการโคนมแห่งประเทศไทย (อ.ส.ค.)<br/>
       <br/>
       <div class="set-1 gap-4" >
-      <img class="inline" src="/articles/28-01-2025_5.webp" width="160" />
-      <img class="inline" src="/articles/28-01-2025_7.webp" width="160" />
-      <img class="" src="/articles/28-01-2025_10.webp" width="335" />
+      <img class="inline" src="/articles/28-01-2025_5.webp" width="160" alt="สินค้าใหม่ Thai-Denmark Nutrical (ไทย-เดนมาร์ค นิวทริแคล)" />
+      <img class="inline" src="/articles/28-01-2025_7.webp" width="160" alt="สินค้าใหม่ Thai-Denmark Nutrical (ไทย-เดนมาร์ค นิวทริแคล)" />
+      <img src="/articles/28-01-2025_10.webp" width="335" alt="สินค้าใหม่ Thai-Denmark Nutrical (ไทย-เดนมาร์ค นิวทริแคล)" />
       </div>
       <br/>
       ผลิตภัณฑ์นี้เป็นนวัตกรรมจากงานวิจัยกับมหาวิทยาลัยมหิดลและสำนักงานพัฒนาการวิจัยการเกษตร (องค์การมหาชน) หรือ สวก. โดยจะวางจำหน่ายที่ Care Corner and More เป็น #ที่แรกของประเทศ ในราคาที่จับต้องได้เพียงกล่องละ 49 บาทต่อ 1 กล่อง ขนาด 250 มล. ที่ให้สารอาหารครบ 5 หมู่ ทดแทนมื้ออาหารได้ ปราศจากแลคโตส โปรตีน 12 กรัม ใช้ไอโซมอลทูโลสที่ดัชนีน้ำตาลต่ำ มีใยอาหาร โอเมก้า 3,6,9 และมิลค์แคลเซียมคอมเพล็กซ์<br/>
       <br/>
-      <img class="cover-image" src="/articles/28-01-2025_4.webp" width="500" />
-      <img class="cover-image" src="/articles/28-01-2025_3.webp" width="500" />
+      <img class="cover-image" src="/articles/28-01-2025_4.webp" width="500" alt="สินค้าใหม่ Thai-Denmark Nutrical (ไทย-เดนมาร์ค นิวทริแคล)" />
+      <img class="cover-image" src="/articles/28-01-2025_3.webp" width="500" alt="สินค้าใหม่ Thai-Denmark Nutrical (ไทย-เดนมาร์ค นิวทริแคล)" />
       <br/>
       ทางผู้บริหารของเราได้มีโอกาสร่วมพูดคุยกับนายสมพร ศรีเมือง ผู้อำนวยการ <a class="link" href="https://www.facebook.com/dpothaidenmark?__cft__%5b0%5d=AZXe2jIXlJqiQ3iKLn1XoYmLtE7Y3Ql2hhNB0c44uFhINTaHFjSldavIC_PstZYi4LEGAlkbhsMPsEadyhxilC-PSx2lEyYJDJ86x43GOhsBzFHKkdmYaL6vRty8NTg9MxAyH-477tyR9xDFR2Zo40daC-ovPfhRzXU7P9Nvo2BSR-eGMgJaDCw0zXPIJ2AsAng&__tn__=-%5dK-R">องค์การส่งเสริมกิจการโคนมแห่งประเทศไทย ผู้ผลิตนมโคแท้ 100% ตราไทย-เดนมาร์ค</a> (อ.ส.ค.) และร่วมสัมภาษณ์กับ ผศ.ดร.สุภัทร์ ไชยกุล ภาควิชาโภชนวิทยา คณะสาธารณสุขศาสตร์ มหาวิทยาลัยมหิดล ผู้คิดค้นผลิตภัณฑ์ไทย-เดนมาร์ค นิวทริแคล ซึ่งในอนาคตจะพัฒนาต่อยอดเป็นอาหารทางการแพทย์จากพืชเกษตรสำหรับผู้ป่วยเบาหวานเร็ว ๆ นี้<br/>
       <br/>
-      <img class="cover-image" src="/articles/28-01-2025_9.webp" width="500" />
-      <img class="cover-image" src="/articles/28-01-2025_8.webp" width="500" />
+      <img class="cover-image" src="/articles/28-01-2025_9.webp" width="500" alt="สินค้าใหม่ Thai-Denmark Nutrical (ไทย-เดนมาร์ค นิวทริแคล)" />
+      <img class="cover-image" src="/articles/28-01-2025_8.webp" width="500" alt="สินค้าใหม่ Thai-Denmark Nutrical (ไทย-เดนมาร์ค นิวทริแคล)" />
       <br/>
       นอกจากนี้ ในช่วงเช้า สมเด็จพระกนิษฐาธิราชเจ้า กรมสมเด็จพระเทพรัตนราชสุดาฯ สยามบรมราชกุมารี ทรงเป็นองค์ประธานเปิด เทศกาลโคนมแห่งชาติ พร้อมทั้งเสด็จพระราชดำเนินทอดพระเนตรนิทรรศการต่าง ๆ ภายในบริเวณงานดังกล่าว
       <br/>

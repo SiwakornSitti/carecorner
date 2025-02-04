@@ -19,7 +19,7 @@ const ShopByCategory: FC = () => {
 
   return (
     <section>
-      <h1 className="text-secondary-brown mb-5 font-bold text-center text-lg">
+      <h1 className="text-secondary-brown mb-5 font-bold text-center text-lg text-stork">
         Shop by Category | ช้อปตามหมวดหมู่
       </h1>
       <div className="">
