@@ -1,6 +1,7 @@
 export const runtime = "edge";
 import type { Metadata } from "next";
 import { Prompt } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import classNames from "classnames";
 import "./globals.css";
 import Navbar from "./_components/Navbar";
@@ -29,6 +30,7 @@ export default function RootLayout({
           <FooterMenu />
         </Navbar>
       </body>
+      <GoogleAnalytics gaId="G-MYQHCE52J7" />
     </html>
   );
 }
