@@ -17,14 +17,16 @@ export default function Articles() {
               className="bg-white rounded-xl card-shadow w-72 overflow-hidden flex flex-col"
             >
               <Link href={`/articles/${article.id}/${article.title}`}>
-                <div className="flex h-64 justify-center bg-black">
-                  <Image
-                    width={200}
-                    height={250}
-                    src={article.cover}
-                    alt={article.title}
-                    className="w-full hover:scale-125 duration-300 ease-in"
-                  />
+                <div className="flex h-64 items-center justify-center bg-black overflow-hidden">
+                  <div>
+                    <Image
+                      width={200}
+                      height={250}
+                      src={article.cover}
+                      alt={article.title}
+                      className="w-full hover:scale-125 duration-300 ease-in h-auto"
+                    />
+                  </div>
                 </div>
               </Link>
               <div className="w-72 p-3 flex flex-col justify-between flex-1">
