@@ -24,6 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html style={{ fontSize: 13 }} lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="kdg5eA8uC6OOdjvJ0D0kfECPigRDxPye-aAS_lS3JAA"
+        />
+      </head>
       <body className={classNames(inter.className, "bg-primary-cream")}>
         <Navbar>
           {children}
