@@ -1,5 +1,11 @@
 "use client";
 import ShopByCategory from "@/app/_components/ShopByCategory";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Shop by categories | หมวดหมู่สินค้า",
+  description: "สินค้าจัดแยกตามหมวดหมู่",
+};
 
 export default function Categories() {
   return (

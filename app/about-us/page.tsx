@@ -1,4 +1,11 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Company | บริษัทของเรา",
+  description:
+    "บริษัทแคร์ คอร์เนอร์ แอนด์ มอร์ จำกัด ศูนย์รวมสินค้าอุปโภคบริโภคเพื่อสุขภาพ ทุกช่วงวัย",
+};
 
 export default function AboutUs() {
   return (

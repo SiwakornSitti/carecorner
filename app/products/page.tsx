@@ -5,6 +5,12 @@ import { PRODUCTS } from "@/constants/products";
 import ShopByCategory from "@/app/_components/ShopByCategory";
 import Divide from "@/components/Divide";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: " All Products | สินค้าทั้งหมด",
+  description: "สินค้าทั้งหมด",
+};
 
 export default function Products() {
   const searchParams = useSearchParams();

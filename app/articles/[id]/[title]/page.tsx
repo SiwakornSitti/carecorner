@@ -1,4 +1,32 @@
 import { ARTICLES } from "@/constants/articles";
+import { Metadata, ResolvingMetadata } from "next";
+
+type Props = {
+  params: Promise<{ id: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+};
+
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
+
+  const { id } = await params;
+  const article = ARTICLES.find((article) => `${article.id}` === id);
+
+  if (!article) {
+    return {
+      title: "Articles | บทความ",
+      description: "บทความและข่าวสารดีๆ เพื่อสุขภาพของคุณ",
+    };
+  }
+
+  return {
+    title: article.title,
+    description: article.subTitle,
+  };
+}
 
 export default async function Article({
   params,

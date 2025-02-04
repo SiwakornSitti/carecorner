@@ -3,6 +3,13 @@ import { Button } from "@nextui-org/button";
 import { SOCIALS } from "@/constants/socials";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us | ติดต่อเรา",
+  description:
+    "บริษัท แคร์ คอร์เนอร์ แอนด์ มอร์ จำกัด (สำนักงานใหญ่) 600/712 หมู่ 14 ถ.พหลโยธิน ต.คูคต อ.ลำลูกกา จ.ปทุมธานี 12130",
+};
 
 export default function ContactUs() {
   return (

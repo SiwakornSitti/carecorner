@@ -2,6 +2,12 @@ import { ARTICLES } from "@/constants/articles";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@nextui-org/button";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Articles | บทความ",
+  description: "บทความและข่าวสารดีๆ เพื่อสุขภาพของคุณ",
+};
 
 export default function Articles() {
   return (
