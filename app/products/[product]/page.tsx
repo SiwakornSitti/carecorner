@@ -5,7 +5,10 @@ import Options from "./_components/Options";
 import { Button } from "@nextui-org/button";
 import Image from "next/image";
 
-export default function Product({ params }: { params: { product: string } }) {
+export default async function Product(props: {
+  params: Promise<{ product: string }>;
+}) {
+  const params = await props.params;
   const productName = decodeURIComponent(params.product);
   const product = PRODUCTS.find((product) => {
     return product.name === productName;
