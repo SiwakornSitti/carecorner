@@ -34,8 +34,8 @@ const Articles: FC<ArticlesProps> = ({ data, className }) => {
                 />
                 <div className="flex justify-between flex-col">
                   <div>
-                    <h2 className="font-bold text-lg mb-2">{data.title}</h2>
-                    <p>{data.subTitle}</p>
+                    <h2 className="font-bold text-lg h-10 overflow-hidden text-ellipsis mb-2 leading-[1.2]">{data.title}</h2>
+                    <p className="h-24 overflow-hidden text-ellipsis">{data.subTitle}</p>
                   </div>
                   <div className="flex justify-between items-center">
                     <p>{data.date}</p>
