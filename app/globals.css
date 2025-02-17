@@ -75,3 +75,7 @@ body {
 .text-shadow {
   text-shadow: 0 4px 8px rgb(73, 73, 73);
 }
+
+h2[data-open="true"] {
+  background-color: #ffcf6d;
+}

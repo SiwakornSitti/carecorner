@@ -10,19 +10,34 @@ export const ROUTES = [
   {
     name: "Our Products | สินค้าของเรา",
     path: "/categories",
-    subRoutes: {
+    subRoutes: [{
       name: "มุมคนรักสุขภาพและทุกคนในครอบครัว",
-      routes: [
-        ...CATEGORIES_GROUP_1,
-        ...CATEGORIES_GROUP_2,
-        ...CATEGORIES_GROUP_3,
-      ].map((category) => {
+      routes:  CATEGORIES_GROUP_1.map((category) => {
         return {
           name: category.label,
           path: `/categories/${category.label}`,
         };
       }),
     },
+    {
+      name: "มุมผู้สูงอายุและผู้ป่วย",
+      routes: CATEGORIES_GROUP_2.map((category) => {
+        return {
+          name: category.label,
+          path: `/categories/${category.label}`,
+        };
+      }),
+    },
+    {
+      name: "มุมลูกน้อยสุขกาย แม่ๆ สุขใจ",
+      routes: CATEGORIES_GROUP_3.map((category) => {
+        return {
+          name: category.label,
+          path: `/categories/${category.label}`,
+        };
+      }),
+    }
+  ],
   },
   {
     name: "News, Activities & Promotions | ข่าวสาร กิจกรรม และโปรโมชั่น",

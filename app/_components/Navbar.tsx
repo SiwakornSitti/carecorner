@@ -128,54 +128,62 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
                     {route.name}
                   </Link>
                 </div>
-                {Boolean(route?.subRoutes) && (
-                  <Accordion
-                   className="px-0"
-                   itemClasses={{
-                    indicator: "hidden",
-                    trigger: "py-0"}}>
-                    <AccordionItem title={<div className="font-semibold text-secondary-brown flex p-4 items-center bg-secondary-yellow">
-                      <Image
-                        alt="logo"
-                        src="/logo2.webp"
-                        width={22}
-                        height={21}
-                      />
-                      {route?.subRoutes?.name}
-                    </div>}
-                     key={route?.subRoutes?.name}
-        aria-label={route?.subRoutes?.name}
-      
-                    >
-
-                    <ul>
-                      {route?.subRoutes?.routes?.map((subRoute) => {
-                        return (
-                          <Link
-                            href={subRoute.path}
-                            key={subRoute.name}
-                            onClick={toggleDrawer}
-                          >
-                            <li
-                              className={classNames(
-                                "p-4 pl-7 hover:bg-secondary-orange hover:text-white",
-                                {
-                                  "bg-secondary-orange": subRoute.path === path,
-                                  "text-white": subRoute.path === path,
-                                }
-                              )}
-                            >
-                              {subRoute.name}
-                            </li>
-                          </Link>
-                        );
-                      })}
-                    </ul>
-                    </AccordionItem>
-                   
-                   
-                  </Accordion>
-                )}
+                  {
+                    !!route?.subRoutes?.[0] && (
+                      <Accordion
+                      className="px-0"
+                      showDivider={false}
+                      itemClasses={{
+                       indicator: "hidden",
+                       trigger: "py-0"}}>
+                         {
+                           route?.subRoutes?.map((subRoute)=>(
+                             <AccordionItem title={
+                               <div className="font-semibold text-secondary-brown flex p-4 items-center text-sm">
+                                 <Image
+                                   alt="logo"
+                                   src="/logo2.webp"
+                                   width={22}
+                                   height={21}
+                                 />
+                                   {subRoute?.name}
+                               </div>
+                             }
+                               key={subRoute?.name}
+                               aria-label={subRoute?.name}
+                             >
+         
+                             <ul>
+                               {subRoute?.routes?.map((route) => {
+                                 return (
+                                   <Link
+                                     href={route.path}
+                                     key={route.name}
+                                     onClick={toggleDrawer}
+                                   >
+                                     <li
+                                       className={classNames(
+                                         "p-4 pl-7 hover:bg-secondary-orange hover:text-white",
+                                         {
+                                           "bg-secondary-orange": route.path === path,
+                                           "text-white": route.path === path,
+                                         }
+                                       )}
+                                     >
+                                       {route.name}
+                                     </li>
+                                   </Link>
+                                 );
+                               })}
+                             </ul>
+                             </AccordionItem>
+                           ))
+                         }
+                     </Accordion>
+                    )
+                  }
+                 
+                
               </Fragment>
             );
           })}
