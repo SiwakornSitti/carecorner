@@ -1,5 +1,5 @@
 import Divide from "@/components/Divide";
-import { Button } from "@nextui-org/button";
+import { Button } from "@heroui/button";
 import { SOCIALS } from "@/constants/socials";
 import Image from "next/image";
 import Link from "next/link";

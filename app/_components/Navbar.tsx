@@ -1,7 +1,8 @@
 "use client";
 import { FC, Fragment, PropsWithChildren, useState } from "react";
+import {Accordion, AccordionItem} from "@heroui/accordion";
 import { useClickAway } from "@uidotdev/usehooks";
-import { Input } from "@nextui-org/input";
+import { Input } from "@heroui/input";
 import Image from "next/image";
 import Link from "next/link";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
@@ -128,8 +129,12 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
                   </Link>
                 </div>
                 {Boolean(route?.subRoutes) && (
-                  <>
-                    <div className="font-semibold flex p-4 items-center bg-secondary-yellow">
+                  <Accordion
+                   className="px-0"
+                   itemClasses={{
+                    indicator: "hidden",
+                    trigger: "py-0"}}>
+                    <AccordionItem title={<div className="font-semibold text-secondary-brown flex p-4 items-center bg-secondary-yellow">
                       <Image
                         alt="logo"
                         src="/logo2.webp"
@@ -137,7 +142,12 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
                         height={21}
                       />
                       {route?.subRoutes?.name}
-                    </div>
+                    </div>}
+                     key={route?.subRoutes?.name}
+        aria-label={route?.subRoutes?.name}
+      
+                    >
+
                     <ul>
                       {route?.subRoutes?.routes?.map((subRoute) => {
                         return (
@@ -161,7 +171,10 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
                         );
                       })}
                     </ul>
-                  </>
+                    </AccordionItem>
+                   
+                   
+                  </Accordion>
                 )}
               </Fragment>
             );

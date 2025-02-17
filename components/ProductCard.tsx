@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@nextui-org/button";
+import { Button } from "@heroui/button";
 import Price from "./Price";
 
 export type ProductCardProps = {

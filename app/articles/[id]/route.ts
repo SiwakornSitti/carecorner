@@ -10,7 +10,7 @@ export async function GET(request: NextRequest) {
   if (article) {
     return NextResponse.redirect(
       new URL(
-        `/articles/${article?.id}/สารพัดทางเลือกนม เพื่อสุขภาพ`,
+        `/articles/${article?.id}/${article.title}`,
         request.url
       )
     );

@@ -1,7 +1,7 @@
 "use client";
 
 import { FC, useState, Fragment } from "react";
-import { Button } from "@nextui-org/button";
+import { Button } from "@heroui/button";
 import { Option } from "@/constants/products";
 import Price from "@/components/Price";
 import classNames from "classnames";

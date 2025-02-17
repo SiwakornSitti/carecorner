@@ -2,7 +2,7 @@ import { PRODUCTS } from "@/constants/products";
 import Link from "next/link";
 import Gallery from "./_components/Gallery";
 import Options from "./_components/Options";
-import { Button } from "@nextui-org/button";
+import { Button } from "@heroui/button";
 import Image from "next/image";
 
 export default async function Product(props: {

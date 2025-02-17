@@ -45,7 +45,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                   width={1200}
                   height={400}
                   alt={slide.name}
-                  className="max-h-full rounded-2xl"
+                  className="h-52 sm:h-60 md:h-auto sm:max-h-full rounded-2xl"
                 />
               </div>
             </div>
