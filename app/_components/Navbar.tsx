@@ -135,11 +135,13 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
                       showDivider={false}
                       itemClasses={{
                        indicator: "hidden",
-                       trigger: "py-0"}}>
+                       trigger: "py-0",
+                       content: "py-0"
+                       }}>
                          {
                            route?.subRoutes?.map((subRoute)=>(
                              <AccordionItem title={
-                               <div className="font-semibold text-secondary-brown flex p-4 items-center text-sm">
+                               <div className="font-semibold text-secondary-brown flex p-4 items-center text-sm hover:bg-secondary-yellow">
                                  <Image
                                    alt="logo"
                                    src="/logo2.webp"
@@ -154,7 +156,39 @@ const Navbar: FC<PropsWithChildren> = ({ children }) => {
                              >
          
                              <ul>
-                               {subRoute?.routes?.map((route) => {
+                               {subRoute?.routes?.map((route: any) => {
+                                if(route?.routes) {
+                                  return (
+                                    <Fragment key={route.name}>
+                                       <li
+                                       className="p-4 pl-7 bg-primary-tan font-semibold"
+                                     >
+                                       - {route.name} -
+                                     </li>
+                                      {
+                                        route?.routes?.map((route: any)=> (
+                                          <Link
+                                          href={route.path}
+                                          key={route.name}
+                                          onClick={toggleDrawer}
+                                        >
+                                          <li
+                                            className={classNames(
+                                              "p-4 pl-7 hover:bg-secondary-orange hover:text-white",
+                                              {
+                                                "bg-secondary-orange": route.path === path,
+                                                "text-white": route.path === path,
+                                              }
+                                            )}
+                                          >
+                                            {route.name}
+                                          </li>
+                                        </Link>
+                                        ))
+                                      }
+                                    </Fragment>
+                                  )
+                                }
                                  return (
                                    <Link
                                      href={route.path}

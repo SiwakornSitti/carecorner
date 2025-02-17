@@ -1,6 +1,4 @@
 import type { MetadataRoute } from "next";
-import { ARTICLES } from "@/constants/articles";
-import Article from "./articles/[id]/[title]/page";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -29,13 +27,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: "https://carecornerandmore.com/articles/2",
+      url: "https://carecornerandmore.com/news/2",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://carecornerandmore.com/articles/3",
+      url: "https://carecornerandmore.com/news/3",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
@@ -47,13 +45,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: "https://carecornerandmore.com/articles/2/%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20Thai-Denmark%20Nutrical(%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B9%80%E0%B8%94%E0%B8%99%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%84%20%E0%B8%99%E0%B8%B4%E0%B8%A7%E0%B8%97%E0%B8%A3%E0%B8%B4%E0%B9%81%E0%B8%84%E0%B8%A5)",
+      url: "https://carecornerandmore.com/news/2/%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20Thai-Denmark%20Nutrical(%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B9%80%E0%B8%94%E0%B8%99%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%84%20%E0%B8%99%E0%B8%B4%E0%B8%A7%E0%B8%97%E0%B8%A3%E0%B8%B4%E0%B9%81%E0%B8%84%E0%B8%A5)",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://carecornerandmore.com/articles/3/Thai-Denmark%20Nutrical(%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B9%80%E0%B8%94%E0%B8%99%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%84%20%E0%B8%99%E0%B8%B4%E0%B8%A7%E0%B8%97%E0%B8%A3%E0%B8%B4%E0%B9%81%E0%B8%84%E0%B8%A5)",
+      url: "https://carecornerandmore.com/news/3/Thai-Denmark%20Nutrical(%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B9%80%E0%B8%94%E0%B8%99%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%84%20%E0%B8%99%E0%B8%B4%E0%B8%A7%E0%B8%97%E0%B8%A3%E0%B8%B4%E0%B9%81%E0%B8%84%E0%B8%A5)",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

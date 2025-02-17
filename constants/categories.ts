@@ -193,21 +193,18 @@ export const CATEGORIES_GROUP_2 = [
     label: "มุมอาหารอ่อน เหลว กลืนง่าย ลำสำลัก",
     value: "มุมอาหารอ่อน เหลว กลืนง่าย ลำสำลัก",
     image: "/category/121.webp",
-    group: "อาหาร"
   },
   // 1
   {
     label: "มุมอาหารทางสายยาง",
     value: "มุมอาหารทางสายยาง",
     image: "/category/122.webp",
-    group: "อาหาร"
   },
   // 2
   {
     label: "มุมของใช้ดูแลผู้ป่วยติดเตียง",
     value: "มุมของใช้ดูแลผู้ป่วยติดเตียง",
     image: "/category/123.webp",
-    group: "ของใช้"
   },
   // 3
   {
@@ -221,14 +218,12 @@ export const CATEGORIES_GROUP_2 = [
     label: "มุมผลิตภัณฑ์ดูแลผู้ป่วยโรคไต",
     value: "มุมผลิตภัณฑ์ดูแลผู้ป่วยโรคไต",
     image: "/category/126.webp",
-    group: "แบ่งตามอาการ/ปัญหาสุขภาพ"
   },
   // 5
   {
     label: "มุมผลิตภัณฑ์ดูแลผู้ป่วยเบาหวาน ความดัน",
     value: "มุมผลิตภัณฑ์ดูแลผู้ป่วยเบาหวาน ความดัน",
     image: "/category/127.webp",
-    group: "แบ่งตามอาการ/ปัญหาสุขภาพ"
   },
 ];
 
@@ -238,6 +233,5 @@ export const CATEGORIES_GROUP_3 = [
     label: "มุมสำหรับแม่และเด็ก",
     value: "มุมสำหรับแม่และเด็ก",
     image: "/category/128.webp",
-    group: "อาหาร"
   },
 ];

@@ -19,6 +19,7 @@ const config: Config = {
         primary: {
           mustard: "#ffb757",
           orange: "#f18369",
+          tan: "#FFF8E7",
           cream: "#fffadc",
           earth: "#FFE8B1",
           warning: "#df5d3f",
