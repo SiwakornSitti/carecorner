@@ -5,6 +5,7 @@ import { Button } from "@heroui/button";
 
 export type ArticlesProps = {
   className?: string;
+  title: string;
   data: {
     id: string | number;
     image: string;
@@ -14,11 +15,11 @@ export type ArticlesProps = {
   }[];
 };
 
-const Articles: FC<ArticlesProps> = ({ data, className }) => {
+const Articles: FC<ArticlesProps> = ({ data, className,title }) => {
   return (
     <section className={className} style={{ maxWidth: 700 }}>
       <h1 className="text-secondary-brown mb-5 font-bold text-center text-lg">
-        Articles | บทความ
+        {title}
       </h1>
       <div className="bg-white rounded-2xl border-2 border-primary-mustard md:p-8 p-4 flex flex-col md:gap-8 gap-4">
         {data.map((data) => {

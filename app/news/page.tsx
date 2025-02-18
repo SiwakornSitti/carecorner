@@ -37,7 +37,7 @@ export default function Articles() {
               </Link>
               <div className="w-72 p-3 flex flex-col justify-between flex-1">
                 <div>
-                  <h2 className="font-semibold text-lg">{each.title}</h2>
+                  <h2 className="font-bold text-lg">{each.title}</h2>
                   <p className="py-2 mb-2">{each.subTitle}</p>
                 </div>
 
