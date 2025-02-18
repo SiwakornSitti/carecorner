@@ -7,6 +7,7 @@ import {
 } from "@/constants/categories";
 import Image from "next/image";
 import Link from "next/link";
+// import Carousel from "@/components/Carousel";
 
 const GROUPING_CATEGORIES = [
   { name: "มุมคนรักสุขภาพและทุกคนในครอบครัว", group: CATEGORIES_GROUP_1 },

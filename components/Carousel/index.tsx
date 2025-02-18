@@ -7,9 +7,13 @@ import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 
+
 type PropType = {
-  slides: { id: string; url: string; name: string }[];
+  slides: { id: string; url: string; name: string; height?:number; width?:number; className?:string; }[];
   options?: EmblaOptionsType;
+  classNames?: {
+    image?:string;
+  }
 };
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
@@ -42,10 +46,10 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
               <div className="embla__slide__number">
                 <Image
                   src={slide.url}
-                  width={1200}
-                  height={400}
+                  width={slide?.width || 1200}
+                  height={slide?.height || 400}
                   alt={slide.name}
-                  className="h-52 sm:h-60 md:h-auto sm:max-h-full rounded-2xl"
+                  className={props?.classNames?.image}
                 />
               </div>
             </div>

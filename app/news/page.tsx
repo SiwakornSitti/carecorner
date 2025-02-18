@@ -43,11 +43,9 @@ export default function Articles() {
 
                 <div className="flex justify-between items-center">
                   <p>{each.date}</p>
-                  <Link href={`/news/${each.id}/${each.title}`}>
-                    <Button className="text-white font-bold" color="warning">
+                    <Button as={Link} href={`/news/${each.id}/${each.title}`} className="text-white font-bold" color="warning">
                       อ่านเพิ่มเติม
                     </Button>
-                  </Link>
                 </div>
               </div>
             </div>

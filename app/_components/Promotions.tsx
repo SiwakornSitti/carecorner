@@ -20,7 +20,7 @@ export type PromotionsProps = {
 const Promotions: FC<PromotionsProps> = ({ className }) => {
   return (
     <section className={classNames("text-secondary-brown w-full", className)}>
-      <Carousel slides={SILDES} options={OPTIONS} />
+      <Carousel slides={SILDES} options={OPTIONS} classNames={{image :"h-52 sm:h-60 md:h-auto sm:max-h-full rounded-2xl"}} />
     </section>
   );
 };

@@ -49,11 +49,9 @@ const Articles: FC<ArticlesProps> = ({ data, className }) => {
                   </div>
                   <div className="flex justify-between items-center">
                     <p>{data.date}</p>
-                    <Link href={`/articles/${data.id}/${data.title}`}>
-                      <Button className="text-white font-bold" color="warning">
+                      <Button as={Link} href={`/articles/${data.id}/${data.title}`} className="text-white font-bold" color="warning">
                         อ่านเพิ่มเติม
                       </Button>
-                    </Link>
                   </div>
                 </div>
               </div>

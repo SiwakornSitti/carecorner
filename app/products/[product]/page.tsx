@@ -33,11 +33,9 @@ export default async function Product(props: {
           <p>{product?.description}</p>
 
           <Options data={product?.sku} />
-          <Link href={"https://lin.ee/FJ2bCMW"}>
-            <Button className="text-white font-bold max-w-24" color="warning">
-              ช้อปเลย
-            </Button>
-          </Link>
+          <Button as={Link} href={"https://lin.ee/FJ2bCMW"} className="text-white font-bold max-w-24" color="warning">
+            ช้อปเลย
+          </Button>
           <div className="flex items-center gap-x-2">
             <p className="text-lg text-primary-warning font-semibold">
               {`คลิกเพื่อช้อปเลย >>`}

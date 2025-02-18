@@ -52,13 +52,9 @@ const ProductCard: FC<ProductCardProps> = ({
             ( {size} )
           </div>
           <Price price={price} discountPrice={discountPrice} />
-          <Link
-            href={`/products/${name}${category ? `?category=${category}` : ""}`}
-          >
-            <Button className="text-white font-bold" color="warning">
-              ช้อปเลย
-            </Button>
-          </Link>
+          <Button as={Link} href={`/products/${name}${category ? `?category=${category}` : ""}`} className="text-white font-bold" color="warning">
+            ช้อปเลย
+          </Button>
         </div>
       </div>
     </div>
