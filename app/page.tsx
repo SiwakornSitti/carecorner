@@ -15,7 +15,8 @@ const lastUpdateArticles = ARTICLES.slice(-2).map((each) => ({
   title: each.title,
   subTitle: each.subTitle,
   image: each.cover,
-  date: each.date
+  date: each.date,
+  link: `/articles/${each.id}/${each.title}`
 }))
 
 const lastUpdateNews = NEWS.slice(-2).map((each) => ({
@@ -23,7 +24,8 @@ const lastUpdateNews = NEWS.slice(-2).map((each) => ({
   title: each.title,
   subTitle: each.subTitle,
   image: each.cover,
-  date: each.date
+  date: each.date,
+  link: `/news/${each.id}/${each.title}`
 }))
 
 export default function Home() {

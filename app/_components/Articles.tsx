@@ -12,6 +12,7 @@ export type ArticlesProps = {
     title: string;
     subTitle: string;
     date: string;
+    link: string;
   }[];
 };
 
@@ -50,7 +51,7 @@ const Articles: FC<ArticlesProps> = ({ data, className,title }) => {
                   </div>
                   <div className="flex justify-between items-center">
                     <p>{data.date}</p>
-                      <Button as={Link} href={`/articles/${data.id}/${data.title}`} className="text-white font-bold" color="warning">
+                      <Button as={Link} href={data.link} className="text-white font-bold" color="warning">
                         อ่านเพิ่มเติม
                       </Button>
                   </div>

@@ -1,4 +1,5 @@
 import { ARTICLES } from "@/constants/articles";
+import { NEWS } from "@/constants/news";
 import { Metadata, ResolvingMetadata } from "next";
 
 type Props = {
