@@ -18,7 +18,7 @@ export const DATA_10_01_2025 = {
       }
       .cover-image {
       margin: auto;
-      margin-bottom: 16px;
+      margin-bottom: 24px;
       }
       </style>
       <img class="cover-image" src="/articles/10-01-2025.webp" width="500" alt="มาเปลี่ยนขนมจุบจิบเป็นขนมอร่อยแถมได้สุขภาพกันเถอะ" />

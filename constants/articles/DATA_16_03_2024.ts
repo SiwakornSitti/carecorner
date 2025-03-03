@@ -23,7 +23,7 @@ export const DATA_16_03_2024 = {
       }
       .cover-image {
       margin: auto;
-      margin-bottom: 16px;
+      margin-bottom: 24px;
       }
       </style>
       <img class="cover-image" src="/articles/16-03-2024.webp" width="500" alt="วันไตโลก (World Kidney Day)" />

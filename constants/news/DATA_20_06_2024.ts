@@ -14,7 +14,7 @@ export const DATA_20_06_2024= {
       }
       .cover-image {
       margin: auto;
-      margin-bottom: 16px;
+      margin-bottom: 24px;
       }
       </style>
       <img class="cover-image" src="/articles/20-06-2024.webp" width="500" alt="ทานอาหารให้เหมาะกับร่างกายของตัวเองกันเถอะ" />

@@ -9,7 +9,7 @@ export const DATA_28_01_2025 = {
       <style>
       .cover-image {
       margin: auto;
-      margin-bottom: 16px;
+      margin-bottom: 24px;
       }
 
       .set-1 {

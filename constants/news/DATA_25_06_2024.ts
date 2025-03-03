@@ -9,7 +9,7 @@ export const DATA_25_06_2024= {
       <style>
       .cover-image {
       margin: auto;
-      margin-bottom: 16px;
+      margin-bottom: 24px;
       }
       </style>
       <img class="cover-image" src="/articles/25-06-2024.webp" width="500" alt="งานแฟร์สีเขียวของคนรักษ์โลก" />

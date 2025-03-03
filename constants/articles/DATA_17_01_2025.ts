@@ -14,7 +14,7 @@ export const DATA_17_01_2025 = {
       }
       .cover-image {
       margin: auto;
-      margin-bottom: 16px;
+      margin-bottom: 24px;
       }
 
       a.link {
