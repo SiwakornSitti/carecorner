@@ -34,7 +34,7 @@ const Categories: FC<CategoriesProps> = ({ className }) => {
               <div className="px-3 pb-3 pt-5 text-secondary-brown">
                 <Link href={category.url}>
                   <div className="flex">
-                    <h2 className="font-bold mb-2 text-white-shadow whitespace-pre-line flex-1">
+                    <h2 className="font-bold mb-2 text-white-shadow flex-1">
                       {category.title}
                     </h2>
                     <div className="">
