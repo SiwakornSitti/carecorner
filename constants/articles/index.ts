@@ -5,6 +5,7 @@ import { DATA_04_10_2024 } from "./DATA_04_10_2024";
 import { DATA_27_09_2024 } from "./DATA_27_09_2024";
 import { DATA_21_09_2024 } from "./DATA_21_09_2024";
 import { DATA_17_09_2024 } from "./DATA_17_09_2024";
+import { DATA_29_09_2024 } from "./DATA_29_09_2024";
 import { DATA_27_08_2024 } from "./DATA_27_08_2024";
 import { DATA_23_08_2024 } from "./DATA_23_08_2024";
 import { DATA_22_08_2024 } from "./DATA_22_08_2024";
@@ -16,6 +17,7 @@ export const ARTICLES = [
   DATA_10_01_2025,
   DATA_04_10_2024,
   DATA_03_10_2024,
+  DATA_29_09_2024,
   DATA_27_09_2024,
   DATA_21_09_2024,
   DATA_17_09_2024,
