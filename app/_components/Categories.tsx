@@ -19,8 +19,7 @@ const Categories: FC<CategoriesProps> = ({ className }) => {
           return (
             <div
               className="bg-secondary-yellow sm:w-60 rounded-2xl"
-              key={category.title}
-            >
+              key={category.title}>
               <div>
                 <Image
                   alt={category.title}
