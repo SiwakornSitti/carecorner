@@ -6,9 +6,6 @@ export const DATA_03_10_2024 = {
   subTitle: `เคยสงสัยไหมว่าทำไมบางคนถึงดูอ่อนเยาว์ทั้งกายและใจ แม้ในวัยสูงอายุ? มาไขคำตอบโดยนักวิทยาคลินิกกันเถอะ`,
   content: `
       <style>
-      ul {
-        list-style-type: disc;
-      }
       li {
         margin-bottom: 10px;
       }

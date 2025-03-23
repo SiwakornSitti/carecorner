@@ -7,9 +7,7 @@ export const DATA_11_02_2025 = {
 `,
   content: `
       <style>
-      ul {
-        list-style-type: disc;
-      }
+
       li {
         margin-bottom: 10px;
       }

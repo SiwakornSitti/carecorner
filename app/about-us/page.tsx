@@ -27,7 +27,7 @@ export default function AboutUs() {
             Products and Services for All Ages
           </b>
           <p>
-            บริษัทแคร์ คอร์เนอร์ แอนด์ มอร์ จำกัด
+            บริษัท แคร์ คอร์เนอร์ แอนด์ มอร์ จำกัด
             ศูนย์รวมสินค้าอุปโภคบริโภคเพื่อสุขภาพ ทุกช่วงวัย
           </p>
         </div>

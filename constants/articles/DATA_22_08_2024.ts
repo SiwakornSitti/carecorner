@@ -6,9 +6,6 @@ export const DATA_22_08_2024 = {
   subTitle: `จากการค้นคว้าพบว่า คนไทยได้รับแคลเซียมเฉลี่ยเพียงวันละ 400 มิลลิกรัมต่อวัน ซึ่งน้อยกว่าความต้องการในแต่ละวันอยู่มาก`,
   content: `
       <style>
-      ul {
-        list-style-type: disc;
-      }
       li {
         margin-bottom: 10px;
       }

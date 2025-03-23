@@ -7,9 +7,6 @@ export const DATA_17_09_2024 = {
   subTitle: `อย่าเผลอทาน “เนื้อสัตว์หรือผลิตภัณฑ์ที่มาจากสัตว์” เช่น นมวัว ชีส นมเปรี้ยว โยเกิร์ต ครีมเทียม นมข้นหวาน น้ำมันหอย ก็ไม่เจนะ นอกจากนี้พวกน้ำชงหรือขนมหวานและเบเกอรี่ต่าง ๆ`,
   content: `
       <style>
-      ul {
-        list-style-type: disc;
-      }
       li {
         margin-bottom: 10px;
       }
@@ -25,12 +22,16 @@ export const DATA_17_09_2024 = {
       margin: auto;
       margin-top: 24px;
       }
-   
+
+      .w-half {
+      max-width:250px;
+      width: 50%;
+      }
       </style>
       <img class="cover-image" src="/articles/17-09-2024_1.webp" width="500" alt="นอนไม่ดี ส่งผลเสียกว่าที่คิด" />
       <div class="cover-image flex justify-center">
-         <img class="" src="/articles/17-09-2024_2.webp" width="250" alt="นอนไม่ดี ส่งผลเสียกว่าที่คิด" />
-         <img class="" src="/articles/17-09-2024_3.webp" width="250" alt="นอนไม่ดี ส่งผลเสียกว่าที่คิด" />
+         <img class="w-half" src="/articles/17-09-2024_2.webp" alt="นอนไม่ดี ส่งผลเสียกว่าที่คิด" />
+         <img class="w-half" src="/articles/17-09-2024_3.webp" alt="นอนไม่ดี ส่งผลเสียกว่าที่คิด" />
       </div>
       <br/>
       <br/>
