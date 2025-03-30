@@ -10,23 +10,23 @@ import Articles from "./_components/Articles";
 import { ARTICLES } from "@/constants/articles";
 import { NEWS } from "@/constants/news";
 
-const lastUpdateArticles = ARTICLES.slice(-2).map((each) => ({
+const lastUpdateArticles = ARTICLES.slice(0, 2).map((each) => ({
   id: each.id,
   title: each.title,
   subTitle: each.subTitle,
   image: each.cover,
   date: each.date,
-  link: `/articles/${each.id}/${each.title}`
-}))
+  link: `/articles/${each.id}/${each.title}`,
+}));
 
-const lastUpdateNews = NEWS.slice(-2).map((each) => ({
+const lastUpdateNews = NEWS.slice(0, 2).map((each) => ({
   id: each.id,
   title: each.title,
   subTitle: each.subTitle,
   image: each.cover,
   date: each.date,
-  link: `/news/${each.id}/${each.title}`
-}))
+  link: `/news/${each.id}/${each.title}`,
+}));
 
 export default function Home() {
   return (
@@ -38,8 +38,20 @@ export default function Home() {
       <Promotions className="mb-8" />
       <Products className="mb-8" />
       <Categories className="mb-8" />
-      <Articles title="News | ข่าวสาร" className="px-2 mb-8" data={lastUpdateNews} />
-      <Articles title="Articles | บทความ"  className="px-2 mb-8" data={lastUpdateArticles} />
+      <Articles
+        title="News | ข่าวสาร"
+        className="px-2 mb-8"
+        data={lastUpdateNews}
+        lenght={NEWS.length}
+        link="/news"
+      />
+      <Articles
+        title="Articles | บทความ"
+        className="px-2 mb-8"
+        data={lastUpdateArticles}
+        lenght={ARTICLES.length}
+        link="/articles"
+      />
       <StrategicPartners className="mb-8" />
       <Partners />
       <Footer />

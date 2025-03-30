@@ -6,6 +6,8 @@ import { Button } from "@heroui/button";
 export type ArticlesProps = {
   className?: string;
   title: string;
+  link: string;
+  lenght?: number;
   data: {
     id: string | number;
     image: string;
@@ -16,7 +18,13 @@ export type ArticlesProps = {
   }[];
 };
 
-const Articles: FC<ArticlesProps> = ({ data, className,title }) => {
+const Articles: FC<ArticlesProps> = ({
+  data,
+  className,
+  title,
+  link,
+  lenght,
+}) => {
   return (
     <section className={className} style={{ maxWidth: 700 }}>
       <h1 className="text-secondary-brown mb-5 font-bold text-center text-lg">
@@ -41,25 +49,39 @@ const Articles: FC<ArticlesProps> = ({ data, className,title }) => {
                   <div>
                     <h2
                       className="font-bold text-lg overflow-hidden text-ellipsis mb-2 leading-[1.2]"
-                      style={{ maxHeight: 40 }}
-                    >
+                      style={{ maxHeight: 40 }}>
                       {data.title}
                     </h2>
-                    <p className="overflow-hidden text-ellipsis" style={{ maxHeight: 42 }}>
+                    <p
+                      className="overflow-hidden text-ellipsis"
+                      style={{ maxHeight: 42 }}>
                       {data.subTitle}
                     </p>
                   </div>
                   <div className="flex justify-between items-center">
                     <p>{data.date}</p>
-                      <Button as={Link} href={data.link} className="text-white font-bold" color="warning">
-                        อ่านเพิ่มเติม
-                      </Button>
+                    <Button
+                      as={Link}
+                      href={data.link}
+                      className="text-white font-bold"
+                      color="warning">
+                      อ่านเพิ่มเติม
+                    </Button>
                   </div>
                 </div>
               </div>
             </div>
           );
         })}
+        <div className="text-center pt-4">
+          <Button
+            as={Link}
+            href={link}
+            className="text-white font-bold sm:max-w-56 w-full"
+            color="warning">
+            อ่านทั้งหมด {!!lenght ? `(${lenght})` : ""}
+          </Button>
+        </div>
       </div>
     </section>
   );
