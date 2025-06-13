@@ -14,7 +14,7 @@ export default function Category() {
         <div className="flex justify-between mb-4">
           <div className="flex items-center">
             <h1 className="font-semi">
-              <Link href="/categories" className="hover:underline">
+              <Link href="/products" className="hover:underline">
                 All Products สินค้าทั้งหมด
               </Link>
               {!!category && (
@@ -29,9 +29,7 @@ export default function Category() {
 
         <div className="flex gap-x-2 gap-y-2 justify-center md:justify-start lg:gap-x-5 lg:gap-y-5 flex-wrap">
           {PRODUCTS.filter((product) => {
-            return category
-              ? product.categories.includes(category)
-              : true;
+            return category ? product.categories.includes(category) : true;
           }).map((product) => {
             const price =
               product.sku[0].options?.[0]?.options?.[0]?.options?.[0]?.value ||

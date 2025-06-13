@@ -18,7 +18,7 @@ export default async function Product(props: {
     <main className="flex min-h-screen flex-col items-center justify-between pb-20 text-secondary-brown">
       <div className="container mx-auto md:pt-6 p-3">
         <h1 className="mb-6">
-          <Link href="/categories" className="hover:underline">
+          <Link href="/products" className="hover:underline">
             All Products สินค้าทั้งหมด
           </Link>
           <span>{` > `}</span>
@@ -33,7 +33,11 @@ export default async function Product(props: {
           <p>{product?.description}</p>
 
           <Options data={product?.sku} />
-          <Button as={Link} href={"https://lin.ee/FJ2bCMW"} className="text-white font-bold max-w-24" color="warning">
+          <Button
+            as={Link}
+            href={"https://lin.ee/FJ2bCMW"}
+            className="text-white font-bold max-w-24"
+            color="warning">
             ช้อปเลย
           </Button>
           <div className="flex items-center gap-x-2">

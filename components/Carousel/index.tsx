@@ -7,13 +7,19 @@ import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 
-
 type PropType = {
-  slides: { id: string; url: string; name: string; height?:number; width?:number; className?:string; }[];
+  slides: {
+    id: string;
+    url: string;
+    name: string;
+    height?: number;
+    width?: number;
+    className?: string;
+  }[];
   options?: EmblaOptionsType;
   classNames?: {
-    image?:string;
-  }
+    image?: string;
+  };
 };
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
@@ -58,7 +64,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       </div>
 
       <div className="embla__controls">
-
         <div className="embla__dots">
           {scrollSnaps.map((_, index) => (
             <DotButton
